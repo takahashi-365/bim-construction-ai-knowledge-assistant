@@ -1,23 +1,23 @@
 # BIM / Construction AI Knowledge Assistant PoC
 
-## Overview
+## 概要
 
-This repository is a local MVP PoC for a **RAG-style knowledge assistant** that searches BIM data quality knowledge and construction AI/DX use case knowledge, then generates grounded sample answers with referenced sources.
+このリポジトリは、BIMデータ品質評価の知識と、建設業務におけるAI/DX活用ユースケースの知識を検索し、**根拠付きで回答するナレッジ検索アシスタント**のPoCです。
 
-The purpose of this PoC is to connect the results of previous BIM / Construction AI portfolio projects into a searchable knowledge assistant.
+PoC 1・PoC 2で作成した成果物を、単なる個別ファイルとして終わらせるのではなく、検索・参照・説明できる形に整理することを目的としています。
 
 ```text
-PoC 1:
+PoC 1：
 BIMデータがAI活用に適しているかを評価する
 
-PoC 2:
+PoC 2：
 BIM・建設業務がどのAI/DX活用に適しているかを分類する
 
-PoC 3:
+PoC 3：
 PoC 1・PoC 2の成果物を検索し、根拠付きで説明する
 ```
 
-Overall flow:
+全体の流れは以下です。
 
 ```text
 データ品質評価
@@ -27,78 +27,151 @@ Overall flow:
 ナレッジ検索・根拠付き回答
 ```
 
-This PoC is designed as a small, local, explainable MVP.
-It does not use cloud AI services, vector databases, embeddings, or real project data.
+### PoC全体の関係図
+
+```mermaid
+flowchart LR
+    POC1["PoC 1<br/>BIM Data Quality &<br/>AI Readiness Assessment"]
+    POC2["PoC 2<br/>BIM / Construction AI<br/>Use Case Mapper"]
+    POC3["PoC 3<br/>BIM / Construction AI<br/>Knowledge Assistant"]
+
+    POC1 -->|"BIMデータ品質ルール<br/>AI Readiness<br/>Fix Guide方針"| POC3
+    POC2 -->|"建設AI/DXユースケース<br/>業務分類<br/>Human Review方針"| POC3
+
+    POC3 --> ANSWER["根拠付き回答<br/>Referenced Sources<br/>HumanReviewRequired<br/>DeepDiveRequired"]
+```
+
+このPoCでは、クラウドAI、OpenAI API、Azure AI Search、ベクトルDB、Embeddingなどは使用していません。
+まずはローカル環境で、**RAG-style document設計、簡易検索、根拠付き回答生成、pytestによる検証**までを小さく実装しています。
 
 ---
 
-## Project Goal
+## 目的
 
-The goal of this PoC is to demonstrate a basic knowledge assistant workflow for BIM and construction AI use cases.
+このPoCの目的は、BIM・建設AIに関するナレッジを、検索可能な形に整理し、質問に対して根拠付きで回答する基本構造を作ることです。
 
-It answers questions such as:
+想定する質問例は以下です。
 
-* What does a BIM data quality rule mean?
-* Which BIM quality issues require human review?
-* Which construction AI/DX use case is related to a given task?
-* What limitations should be considered when publishing or using this PoC?
-* Which source document was used as the basis of an answer?
+* Door Name Missing Rule は何を意味するか
+* Room Name Missing Rule は何を意味するか
+* AI Readiness Score は何を判断するためのものか
+* HumanReviewRequired=True の場合、何に注意すべきか
+* HumanReviewRequired=False なら人間確認は不要なのか
+* 建設業務に対して、どのAI/DX活用候補が考えられるか
+* GitHub公開時に注意すべき制約は何か
+* 回答の根拠となる参照元はどれか
 
-The key point is not free text generation.
-The key point is **grounded answer generation with traceable sources**.
-
----
-
-## Positioning in Portfolio
-
-This repository is PoC 3 in the BIM / Construction AI portfolio sequence.
-
-| PoC   | Theme                                      | Role                                                            |
-| ----- | ------------------------------------------ | --------------------------------------------------------------- |
-| PoC 1 | BIM Data Quality & AI Readiness Assessment | Evaluates BIM data quality and AI readiness                     |
-| PoC 2 | BIM / Construction AI Use Case Mapper      | Maps BIM/construction work to AI/DX use cases                   |
-| PoC 3 | BIM / Construction AI Knowledge Assistant  | Searches PoC 1 / PoC 2 knowledge and generates grounded answers |
-
-PoC 3 does not replace PoC 1 or PoC 2.
-Instead, it uses their outputs as searchable knowledge.
+重要なのは、自由な文章生成そのものではありません。
+このPoCで重視しているのは、**検索結果に基づき、参照元を示しながら回答する構造**です。
 
 ---
 
-## What This PoC Does
+## ポートフォリオ上の位置づけ
 
-This PoC performs the following steps:
+このリポジトリは、BIM / Construction AI ポートフォリオにおける **PoC 3** です。
 
-1. Reads sample knowledge from CSV files
-2. Converts PoC 1 / PoC 2 knowledge into RAG-style JSONL documents
-3. Builds a simple keyword-based index
-4. Retrieves related documents for sample questions
-5. Generates grounded sample answers in Markdown
-6. Validates outputs with pytest
+| PoC   | テーマ                                        | 役割                           |
+| ----- | ------------------------------------------ | ---------------------------- |
+| PoC 1 | BIM Data Quality & AI Readiness Assessment | BIMデータ品質とAI活用準備度を評価する        |
+| PoC 2 | BIM / Construction AI Use Case Mapper      | BIM・建設業務をAI/DX活用候補に分類する      |
+| PoC 3 | BIM / Construction AI Knowledge Assistant  | PoC 1・PoC 2の知識を検索し、根拠付きで説明する |
+
+PoC 3は、PoC 1・PoC 2を置き換えるものではありません。
+PoC 1・PoC 2で作成したルール、分類、方針、制約、ユースケースを、検索可能なナレッジとして再利用するためのPoCです。
 
 ---
 
-## What This PoC Does Not Do
+## このPoCで実装したこと
 
-This MVP intentionally does not include the following:
+このPoCでは、以下の処理を実装しています。
 
-* Azure AI Search implementation
-* Azure OpenAI / OpenAI API calls
-* LangChain / LlamaIndex
-* Embeddings
-* Vector database
+1. PoC 1・PoC 2のサンプル知識をCSVで用意
+2. CSVをRAG-style document形式のJSONLに変換
+3. JSONLから簡易キーワードインデックスを生成
+4. サンプル質問に対して関連documentを検索
+5. 検索結果をもとに、根拠付き回答Markdownを生成
+6. 生成物をpytestで検証
+
+### 処理フロー図
+
+```mermaid
+flowchart TD
+    A["input/poc1_knowledge_samples.csv<br/>PoC 1サンプル知識"]
+    B["input/poc2_knowledge_samples.csv<br/>PoC 2サンプル知識"]
+    C["src/build_rag_documents.py"]
+    D["output/rag_documents_v001.jsonl<br/>RAG-style documents"]
+    E["src/build_rag_index.py"]
+    F["output/rag_index_v001.json<br/>simple keyword index"]
+    G["input/sample_questions_v001.csv<br/>35 sample questions"]
+    H["src/retrieve_documents.py"]
+    I["output/retrieval_results_v001.csv<br/>Top 3 retrieval results"]
+    J["src/generate_sample_answers.py"]
+    K["output/sample_answers_v001.md<br/>Grounded sample answers"]
+    L["pytest<br/>90 passed"]
+
+    A --> C
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> H
+    G --> H
+    H --> I
+    I --> J
+    D --> J
+    J --> K
+
+    D --> L
+    F --> L
+    I --> L
+    K --> L
+```
+
+### 回答生成の考え方
+
+```mermaid
+flowchart LR
+    Q["Question<br/>質問"]
+    R["Retrieval<br/>関連document検索"]
+    S["Referenced Sources<br/>参照元"]
+    M["Metadata<br/>RuleId / UseCaseId<br/>HumanReviewRequired"]
+    A["Grounded Answer<br/>根拠付き回答"]
+    C["Caution<br/>人間レビュー注意書き"]
+
+    Q --> R
+    R --> S
+    R --> M
+    S --> A
+    M --> A
+    A --> C
+```
+
+---
+
+## このPoCで実装していないこと
+
+このMVPでは、以下は意図的に対象外にしています。
+
+* Azure AI Searchの実装
+* Azure OpenAI / OpenAI APIの利用
+* LangChain / LlamaIndexの利用
+* Embedding生成
+* ベクトルDB
 * FAISS / Chroma
-* Production RAG pipeline
-* Real customer data
-* Real project data
-* Revit model modification
-* Automatic BIM correction
-* Legal, safety, design, construction, or contract decision-making
+* 本番RAG構成
+* 実案件データの利用
+* 顧客データの利用
+* 社内機密データの利用
+* Revitモデルの自動修正
+* BIMデータの自動変更
+* 設計判断、施工判断、法規判断、安全判断、契約判断の自動化
 
-This is a local MVP to demonstrate the structure and logic of a grounded BIM / Construction AI knowledge assistant.
+このPoCは、あくまでローカル環境で動くMVPです。
+本番利用を想定したシステムではありません。
 
 ---
 
-## Repository Structure
+## フォルダ構成
 
 ```text
 bim-construction-ai-knowledge-assistant/
@@ -140,15 +213,15 @@ bim-construction-ai-knowledge-assistant/
 
 ---
 
-## Main Inputs
+## 主な入力ファイル
 
 ### `input/poc1_knowledge_samples.csv`
 
-Sample knowledge from PoC 1.
+PoC 1由来のサンプルナレッジです。
 
-This includes BIM data quality rules, AI readiness concepts, RAG design policies, and human review policies.
+BIMデータ品質ルール、AI Readiness、RAG設計方針、人間レビュー方針などを含みます。
 
-Examples:
+例：
 
 * Door Name Missing Rule
 * Room Name Missing Rule
@@ -156,27 +229,31 @@ Examples:
 * RAG Design Policy
 * Human Review Policy
 
+---
+
 ### `input/poc2_knowledge_samples.csv`
 
-Sample knowledge from PoC 2.
+PoC 2由来のサンプルナレッジです。
 
-This includes construction AI/DX use case mapping knowledge.
+建設業務とAI/DX活用候補の対応関係、ユースケース分類、人間レビュー方針などを含みます。
 
-Examples:
+例：
 
 * Meeting Minutes AI
 * Invoice Processing AI
 * BIM Data Check
+* Construction AI Use Case
 * Human Review Policy
-* Construction AI use case categories
+
+---
 
 ### `input/sample_questions_v001.csv`
 
-Sample questions used to test the retrieval and answer generation flow.
+検索・回答生成を確認するためのサンプル質問です。
 
-This file contains 35 questions.
+現在は35問を用意しています。
 
-Examples:
+例：
 
 * Door Name Missing Rule は何を意味しますか
 * Room Name Missing Rule は何を意味しますか
@@ -186,15 +263,15 @@ Examples:
 
 ---
 
-## Main Outputs
+## 主な出力ファイル
 
 ### `output/rag_documents_v001.jsonl`
 
-RAG-style document file generated from the PoC 1 / PoC 2 sample knowledge.
+PoC 1・PoC 2のサンプルナレッジを、RAG-style documentとして変換したJSONLファイルです。
 
-Each line is one JSON document.
+1行につき1documentです。
 
-Main fields:
+主な項目は以下です。
 
 * `document_id`
 * `source_poc`
@@ -204,7 +281,7 @@ Main fields:
 * `metadata`
 * `keywords`
 
-Example document structure:
+例：
 
 ```json
 {
@@ -232,15 +309,17 @@ Example document structure:
 }
 ```
 
+---
+
 ### `output/rag_index_v001.json`
 
-Simple keyword index generated from `rag_documents_v001.jsonl`.
+`rag_documents_v001.jsonl` から生成した簡易キーワードインデックスです。
 
-This is not a vector index.
-It is not an embedding index.
-It is a local keyword-based MVP index.
+これはベクトルインデックスではありません。
+Embeddingも使用していません。
+ローカルMVP用の `simple_keyword_index` です。
 
-Main fields:
+主な項目は以下です。
 
 * `index_version`
 * `index_type`
@@ -250,13 +329,15 @@ Main fields:
 * `documents`
 * `inverted_index`
 
+---
+
 ### `output/retrieval_results_v001.csv`
 
-Search result file generated from `sample_questions_v001.csv`.
+`sample_questions_v001.csv` の各質問に対する検索結果です。
 
-Each question retrieves up to Top 3 related documents.
+各質問に対して、最大Top 3の関連documentを取得します。
 
-Main fields:
+主な項目は以下です。
 
 * `QuestionId`
 * `Question`
@@ -274,11 +355,13 @@ Main fields:
 * `DeepDiveRequired`
 * `SourceFile`
 
+---
+
 ### `output/sample_answers_v001.md`
 
-Grounded sample answers generated from retrieval results.
+検索結果をもとに生成した、根拠付き回答のサンプルです。
 
-Each answer includes:
+各回答には以下を含めています。
 
 * Question
 * Answer
@@ -289,20 +372,20 @@ Each answer includes:
 * DeepDiveRequired
 * Caution
 
-This output is template-based.
-It is not LLM-based free generation.
+この回答生成はテンプレートベースです。
+LLMによる自由生成ではありません。
 
 ---
 
-## Workflow
+## 実行手順
 
-### Step 1: Build RAG-style documents
+### 1. RAG-style documentを生成
 
 ```powershell
 python src/build_rag_documents.py
 ```
 
-Expected output:
+想定結果：
 
 ```text
 RAG-style documents generated successfully.
@@ -311,7 +394,7 @@ PoC1 documents: 16
 PoC2 documents: 22
 ```
 
-Generated file:
+生成ファイル：
 
 ```text
 output/rag_documents_v001.jsonl
@@ -319,13 +402,13 @@ output/rag_documents_v001.jsonl
 
 ---
 
-### Step 2: Build simple keyword index
+### 2. 簡易キーワードインデックスを生成
 
 ```powershell
 python src/build_rag_index.py
 ```
 
-Expected output:
+想定結果：
 
 ```text
 RAG-style keyword index generated successfully.
@@ -335,7 +418,7 @@ PoC2 documents: 22
 Unique tokens: 565
 ```
 
-Generated file:
+生成ファイル：
 
 ```text
 output/rag_index_v001.json
@@ -343,13 +426,13 @@ output/rag_index_v001.json
 
 ---
 
-### Step 3: Retrieve documents for sample questions
+### 3. サンプル質問に対して検索を実行
 
 ```powershell
 python src/retrieve_documents.py
 ```
 
-Expected output:
+想定結果：
 
 ```text
 Document retrieval completed successfully.
@@ -359,7 +442,7 @@ No-result rows: 0
 Top K: 3
 ```
 
-Generated file:
+生成ファイル：
 
 ```text
 output/retrieval_results_v001.csv
@@ -367,13 +450,13 @@ output/retrieval_results_v001.csv
 
 ---
 
-### Step 4: Generate grounded sample answers
+### 4. 根拠付き回答Markdownを生成
 
 ```powershell
 python src/generate_sample_answers.py
 ```
 
-Expected output:
+想定結果：
 
 ```text
 Sample grounded answers generated successfully.
@@ -381,7 +464,7 @@ Questions: 35
 No-result questions: 0
 ```
 
-Generated file:
+生成ファイル：
 
 ```text
 output/sample_answers_v001.md
@@ -389,15 +472,15 @@ output/sample_answers_v001.md
 
 ---
 
-## Test
+## テスト
 
-Run all tests:
+全テストを実行します。
 
 ```powershell
 pytest
 ```
 
-Current result:
+現在の結果：
 
 ```text
 collected 90 items
@@ -412,92 +495,104 @@ tests/test_sample_answers.py .........................
 
 ---
 
-## Test Coverage
+## テスト内容
 
 ### `tests/test_rag_documents.py`
 
-Validates:
+`output/rag_documents_v001.jsonl` を検証します。
 
-* `rag_documents_v001.jsonl` exists
-* Documents are not empty
-* Required fields exist
-* Metadata fields exist
-* `document_id` values are unique
-* PoC 1 and PoC 2 documents exist
-* RuleMaster and UseCaseMapping documents exist
-* HumanReviewRequired / DeepDiveRequired values exist
-* Door / Room rule documents exist
-* UseCaseId documents exist
-* Prohibited final-decision phrases are not included
+確認内容：
 
-### `tests/test_rag_index.py`
-
-Validates:
-
-* `rag_index_v001.json` exists
-* Index has required fields
-* Index type is `simple_keyword_index`
-* Document count matches
-* Token count matches
-* Inverted index exists
-* Expected terms exist
-* PoC 1 and PoC 2 sources exist
-* RuleMaster and UseCaseMapping sources exist
-* Prohibited final-decision phrases are not included
-
-### `tests/test_retrieval_results.py`
-
-Validates:
-
-* `retrieval_results_v001.csv` exists
-* 35 questions exist
-* All questions have retrieval results
-* No-result rows are zero
-* Rank and Score exist
-* Top K is limited to 3
-* Q001 retrieves D-001
-* Q004 retrieves R-101
-* Q013 retrieves UC-001
-* HumanReviewRequired / DeepDiveRequired are included
-* PoC 1 and PoC 2 sources are included
-* RuleMaster and UseCaseMapping sources are included
-
-### `tests/test_sample_answers.py`
-
-Validates:
-
-* `sample_answers_v001.md` exists
-* 35 answer sections exist
-* Answer / Reasoning Summary / Referenced Sources sections exist
-* Metadata Summary exists
-* HumanReviewRequired / DeepDiveRequired / Caution sections exist
-* Referenced sources are included
-* No missing referenced source remains
-* Human review caution is included
-* Revit auto-modification limitation is included
-* Door / Room / UseCase examples are included
-* Prohibited final-decision phrases are not included outside question headings
+* ファイルが存在する
+* documentが空ではない
+* 必須フィールドが存在する
+* metadataが存在する
+* `document_id` が重複していない
+* PoC 1 / PoC 2 のdocumentが含まれている
+* RuleMaster / UseCaseMapping が含まれている
+* HumanReviewRequired / DeepDiveRequired が含まれている
+* Door / Room の代表ルールが含まれている
+* UseCaseIdが含まれている
+* 禁止表現が含まれていない
 
 ---
 
-## Answer Policy
+### `tests/test_rag_index.py`
 
-This PoC follows a grounded answer policy.
+`output/rag_index_v001.json` を検証します。
 
-Answers should include:
+確認内容：
 
-* Question
-* Answer
-* Reasoning Summary
-* Referenced Sources
+* ファイルが存在する
+* 必須フィールドが存在する
+* `index_type` が `simple_keyword_index` である
+* document数が一致している
+* token数が一致している
+* inverted index が存在する
+* 重要な検索語が含まれている
+* PoC 1 / PoC 2 のsourceが含まれている
+* RuleMaster / UseCaseMapping が含まれている
+* 禁止表現が含まれていない
+
+---
+
+### `tests/test_retrieval_results.py`
+
+`output/retrieval_results_v001.csv` を検証します。
+
+確認内容：
+
+* ファイルが存在する
+* 35問が含まれている
+* 全質問に検索結果がある
+* No-result が0件である
+* Rank / Score が入っている
+* Top K が3件以内である
+* Q001 が D-001 を取得できている
+* Q004 が R-101 を取得できている
+* Q013 が UC-001 を取得できている
+* HumanReviewRequired / DeepDiveRequired が含まれている
+* PoC 1 / PoC 2 のsourceが含まれている
+* RuleMaster / UseCaseMapping が含まれている
+
+---
+
+### `tests/test_sample_answers.py`
+
+`output/sample_answers_v001.md` を検証します。
+
+確認内容：
+
+* ファイルが存在する
+* 35問分の回答セクションがある
+* Answer / Reasoning Summary / Referenced Sources がある
+* Metadata Summary がある
+* HumanReviewRequired / DeepDiveRequired / Caution がある
+* 参照元が含まれている
+* No-resultの回答が残っていない
+* 人間レビューの注意書きが含まれている
+* Revit自動修正を行わない制約が含まれている
+* Door / Room / UseCase の代表例が含まれている
+* 禁止表現が含まれていない
+
+---
+
+## 回答方針
+
+このPoCでは、回答に以下を含める方針としています。
+
+* 質問
+* 回答
+* 回答理由の要約
+* 参照元
 * RuleId
 * UseCaseId
 * RecommendedApproach
 * HumanReviewRequired
 * DeepDiveRequired
-* Caution
+* 注意書き
 
-Important policy:
+重要な注意書き：
 
 ```text
 この回答は協議用の参考情報です。
@@ -507,140 +602,139 @@ AIは最終判断を行いません。
 
 ---
 
-## Human Review Policy
+## Human Review方針
 
-AI does not make final decisions.
+このPoCでは、AIが最終判断を行うことを想定していません。
 
-Human review is required for:
+人間レビューが必要な領域は以下です。
 
-* Design decisions
-* Construction decisions
-* Legal decisions
-* Safety decisions
-* Contract decisions
-* Cost decisions
-* Schedule decisions
-* Client-facing recommendations
-* Revit model changes
-* BIM data correction policies
+* 設計判断
+* 施工判断
+* 法規判断
+* 安全判断
+* 契約判断
+* コスト判断
+* 工程判断
+* 顧客向け提案
+* Revitモデル変更
+* BIMデータ修正方針
 
-`HumanReviewRequired=False` does not mean that human confirmation is unnecessary.
-It only means that the retrieved knowledge item is not flagged as requiring special human review in this MVP metadata.
-
----
-
-## Limitations
-
-This is a local MVP.
-
-Current limitations:
-
-* Keyword-based search only
-* No embeddings
-* No vector database
-* No Azure AI Search implementation
-* No OpenAI API call
-* No Azure OpenAI call
-* No LangChain / LlamaIndex
-* No production security design
-* No real customer data
-* No real project data
-* No confidential internal data
-* No automatic Revit model editing
-* No legal, safety, design, construction, or contract final decision
+`HumanReviewRequired=False` は、人間確認が不要という意味ではありません。
+このMVPのmetadata上、特別な人間レビュー必須フラグが立っていないという意味です。
 
 ---
 
-## Public Repository Policy
+## 制約事項
 
-This repository is intended for portfolio and learning purposes.
+このPoCはローカルMVPです。
 
-When publishing to GitHub:
+現在の主な制約は以下です。
 
-* Use only sample data
-* Do not include customer data
-* Do not include project-specific confidential data
-* Do not include real building model data
-* Do not include internal company documents
-* Do not include credentials, API keys, or tokens
-* Clearly state MVP limitations
-* Clearly state that AI does not make final decisions
-* Clearly state that Revit models are not automatically modified
+* キーワード検索のみ
+* Embeddingなし
+* ベクトルDBなし
+* Azure AI Searchなし
+* OpenAI APIなし
+* Azure OpenAIなし
+* LangChain / LlamaIndexなし
+* 本番セキュリティ設計なし
+* 実案件データなし
+* 顧客データなし
+* 社内機密データなし
+* Revitモデルの自動編集なし
+* 設計・施工・法規・安全・契約に関する最終判断なし
 
 ---
 
-## Why This PoC Matters
+## GitHub公開時の方針
 
-In BIM and construction AI projects, a common problem is that knowledge exists across many files and project outputs, but it is difficult to search, explain, and reuse.
+このリポジトリは、ポートフォリオおよび学習目的のPoCです。
 
-This PoC demonstrates a small but important workflow:
+GitHub公開時には、以下に注意します。
+
+* サンプルデータのみ使用する
+* 顧客データを含めない
+* 実案件データを含めない
+* 社内機密情報を含めない
+* 実際の建物モデルデータを含めない
+* APIキー、トークン、認証情報を含めない
+* MVPであることを明記する
+* AIが最終判断しないことを明記する
+* Revitモデルを自動修正しないことを明記する
+
+---
+
+## このPoCのポイント
+
+BIMや建設AIのプロジェクトでは、ルール、判断基準、業務分類、AI活用方針が複数のファイルに分散しがちです。
+
+このPoCでは、それらを検索可能なナレッジとして整理し、質問に対して根拠付きで回答する流れを作りました。
 
 ```text
-BIM data quality rules
+BIMデータ品質ルール
 +
-Construction AI/DX use case mapping
+建設AI/DXユースケース分類
 +
-RAG-style document design
+RAG-style document設計
 +
-Grounded retrieval
+簡易検索
 +
-Referenced answer generation
+根拠付き回答生成
 +
-pytest validation
+pytest検証
 ```
 
-This provides a foundation for future expansion into:
+これにより、将来的に以下へ拡張するための土台になります。
 
-* Azure AI Search
-* Vector search
-* Embedding-based retrieval
-* Azure OpenAI grounded answer generation
-* Internal BIM knowledge assistant
-* Construction AI proposal assistant
-* BIM data quality explanation assistant
-* AI readiness review assistant
+* BIMデータ品質説明アシスタント
+* AI Readiness評価説明アシスタント
+* 建設AI提案支援アシスタント
+* 社内BIMナレッジ検索アシスタント
+* Azure AI Searchを使ったRAG構成
+* Azure OpenAIを使った回答生成
 
 ---
 
-## Future Improvements
+## 今後の拡張候補
 
-Possible future improvements include:
+今後の拡張候補は以下です。
 
-* Add real embedding-based search
-* Add Azure AI Search
-* Add Azure OpenAI answer generation
-* Add Streamlit UI
-* Add source document viewer
-* Add confidence score
-* Add answer comparison
-* Add feedback loop
-* Add more BIM rule categories
-* Add more construction AI use cases
-* Add COBie / FM knowledge
-* Add pyRevit metadata export knowledge
-* Add BIM execution planning knowledge
-* Add user-facing Japanese answer templates
+* Embedding検索の追加
+* Azure AI Search対応
+* Azure OpenAIによる回答生成
+* Streamlit UIの追加
+* 参照元document表示機能
+* confidence scoreの追加
+* 回答比較機能
+* feedback loopの追加
+* BIMルールカテゴリの追加
+* 建設AIユースケースの追加
+* COBie / FMナレッジの追加
+* pyRevit metadata exportナレッジの追加
+* BIM実行計画・BEP関連ナレッジの追加
+* 日本語回答テンプレートの改善
 
 ---
 
-## Current Status
+## 現在のステータス
 
-Current MVP status:
+現在のMVPステータスは以下です。
 
 ```text
-Step 1: Project folder created
-Step 2: Design documents created
-Step 3: Input samples created
-Step 4: RAG-style document JSONL generated
-Step 5: Simple keyword index generated
-Step 6: Retrieval results generated
-Step 7: Grounded sample answers generated
-Step 8: Output review completed
-Step 9: pytest validation completed
-Step 10: README created
+Step 1：プロジェクトフォルダ作成
+Step 2：docs設計資料作成
+Step 3：inputサンプル作成
+Step 4：RAG-style document JSONL生成
+Step 5：簡易インデックス生成
+Step 6：検索処理実装
+Step 7：根拠付き回答生成
+Step 8：出力確認・サンプルレビュー
+Step 9：pytest作成・検証
+Step 10：README作成
+Step 11：GitHub公開整理
 ```
 
-Current test result:
+現在のテスト結果：
 
 ```text
 90 passed
@@ -648,21 +742,23 @@ Current test result:
 
 ---
 
-## Tech Stack
+## 使用技術
 
 * Python
 * CSV
 * JSON / JSONL
 * Markdown
+* Mermaid
 * pytest
+* Git / GitHub
 
-No external AI API is required for this MVP.
+このMVPでは、外部AI APIは使用していません。
 
 ---
 
-## License / Usage
+## 利用目的
 
-This repository is a personal portfolio PoC for BIM / Construction AI learning and demonstration.
+このリポジトリは、BIM / Construction AI領域における個人ポートフォリオPoCです。
 
-The sample data is created for demonstration purposes only.
-It should not be treated as production data, legal advice, design advice, construction advice, or safety advice.
+サンプルデータはデモ用に作成したものです。
+本番データ、法的助言、設計助言、施工助言、安全判断、契約判断として使用するものではありません。
