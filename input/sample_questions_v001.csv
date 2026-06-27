@@ -1,0 +1,36 @@
+QuestionId,Question,QuestionType,ExpectedSourcePoC,ExpectedSourceType,ExpectedRuleId,ExpectedUseCaseId,ExpectedFocus,HumanReviewExpected,DeepDiveExpected,Keywords
+Q001,Door Name Missing Rule は何を意味しますか,PoC1 Rule Question,PoC1,RuleMaster,D-001,,Door Name不足の意味とAI Readinessへの影響,True,False,door|name|missing|D-001|AI readiness|human review
+Q002,DoorのLevel情報が不足している場合は何を確認すべきですか,PoC1 Rule Question,PoC1,RuleMaster,D-002,,Door Level不足時の確認ポイント,True,False,door|level|D-002|階情報|確認
+Q003,DoorとRoomの関連情報が不足していると何が問題ですか,PoC1 Rule Question,PoC1,RuleMaster,D-003,,DoorとRoomの関連不足がAI Contextへ与える影響,True,True,door|room|relation|D-003|AI context|deep dive
+Q004,Room Name Missing Rule は何を意味しますか,PoC1 Rule Question,PoC1,RuleMaster,R-101,,RoomName不足の意味と検索対象ナレッジへの影響,True,False,room|RoomName|R-101|missing|AI readiness
+Q005,Room Numberが不足している場合はAI活用にどんな影響がありますか,PoC1 Rule Question,PoC1,RuleMaster,R-102,,RoomNumber不足と部屋識別への影響,True,False,room|RoomNumber|R-102|identifier|AI context
+Q006,Room Area Missing Rule では何を確認すべきですか,PoC1 Rule Question,PoC1,RuleMaster,R-103,,Room面積不足時の確認ポイント,True,True,room|area|R-103|boundary|BI|deep dive
+Q007,Door Name Missing のFix Guideでは何を確認しますか,PoC1 Fix Guide Question,PoC1,FixGuide,D-001,,Door Name不足時の修正方針と確認ポイント,True,False,fix guide|door|name|D-001|ElementId|UniqueId
+Q008,Room情報が不足している場合のFix Guideを教えてください,PoC1 Fix Guide Question,PoC1,FixGuide,R-101,,RoomNameとRoomNumber不足時の確認方針,True,False,fix guide|room|RoomName|RoomNumber|R-101|R-102
+Q009,AI ReadinessにおいてElementIdやUniqueIdはなぜ重要ですか,PoC1 AI Readiness Question,PoC1,AIReadiness,,,識別子不足がAI活用準備度へ与える影響,True,False,AI readiness|ElementId|UniqueId|identifier|識別子
+Q010,AI ContextではどのBIM要素情報を使いますか,PoC1 AI Context Question,PoC1,AIContext,,,BIM要素をAI向け文脈情報にするための項目,False,False,AI context|Category|ElementId|FamilyName|TypeName|RoomName
+Q011,pyRevit Metadata Exportでは何を出力しますか,PoC1 Metadata Question,PoC1,pyRevitMetadata,,,pyRevitで出力するmetadata項目,True,False,pyRevit|metadata|ElementId|UniqueId|Category|CSV
+Q012,BIM品質チェックの結果はAIが自動修正してよいですか,PoC1 Human Review Question,PoC1,HumanReviewPolicy,,,BIM品質判断と自動修正しない方針,True,False,human review|自動修正|BIM quality|最終判断
+Q013,BIMの指摘対応はRAGに向いていますか,PoC2 UseCase Question,PoC2,UseCaseMapping,,UC-001,BIM指摘対応におけるRAG SupportとHuman Review,True,False,BIM|issue|RAG|UC-001|human review
+Q014,BIMデータ品質確認はどのAI活用に向いていますか,PoC2 UseCase Question,PoC2,UseCaseMapping,,UC-002,BIM品質確認のRule-based CheckとBI適性,True,False,BIM data quality|Rule-based Check|BI|UC-002
+Q015,AI Readiness Assessment はBIに向いていますか,PoC2 UseCase Question,PoC2,UseCaseMapping,,UC-003,AI Readiness評価のBI適性とHuman Review,True,False,AI readiness|BI|score|UC-003
+Q016,Fix Guide検索はRAG-style検索に向いていますか,PoC2 UseCase Question,PoC2,UseCaseMapping,,UC-004,Fix Guide検索のRAG適性,False,False,Fix Guide|RAG|RuleId|UC-004
+Q017,Room情報レビューではDeep Diveが必要ですか,PoC2 UseCase Question,PoC2,UseCaseMapping,,UC-005,Room情報レビューにおける追加確認と人間レビュー,True,True,room|RoomName|RoomNumber|deep dive|UC-005
+Q018,Door metadata review は自動化できますか,PoC2 UseCase Question,PoC2,UseCaseMapping,,UC-006,Door metadata確認の自動化支援とHuman Review,True,False,door|metadata|automation|UC-006|human review
+Q019,建設業務ユースケース分類では何を分類しますか,PoC2 Workflow Question,PoC2,UseCaseMapping,,UC-007,RAGやBIや自動化などの分類方針,True,False,use case mapping|RecommendedApproach|RAG|BI|automation|UC-007
+Q020,RAGに向いている業務はどのように判定しますか,PoC2 Classification Rule Question,PoC2,ClassificationRule,,,RAG Support分類ルールの確認,False,False,RAG Support|classification rule|ナレッジ参照|FAQ|Fix Guide
+Q021,BIやDashboardに向いている業務はどのように判定しますか,PoC2 Classification Rule Question,PoC2,ClassificationRule,,,BI Dashboard分類ルールの確認,False,False,BI|Dashboard|KPI|集計|classification rule
+Q022,自動化候補の業務は完全自動化してよいですか,PoC2 Automation Question,PoC2,ClassificationRule,,,Automation SupportとHuman Reviewの境界,True,True,automation|自動化|human review|deep dive|最終判断
+Q023,HumanReviewRequired=Trueになる業務はどのようなものですか,PoC2 Human Review Question,PoC2,ClassificationRule,,,人間レビュー必須の判断種別,True,False,human review|設計判断|施工判断|法規判断|安全判断|契約判断
+Q024,DeepDiveRequired=Trueの場合は何を追加確認すべきですか,PoC2 Deep Dive Question,PoC2,ClassificationRule,,,追加確認が必要な業務の確認観点,True,True,deep dive|追加確認|ヒアリング|判断条件|業務範囲
+Q025,DXサービス候補はそのまま導入判断してよいですか,PoC2 Discussion Question,PoC2,UseCaseMapping,,UC-014,DXサービス候補と人間レビューの必要性,True,True,DX service|導入判断|discussion|human review|UC-014
+Q026,PoC 2の成果物はPoC 3でどのように使いますか,PoC2 Workflow Question,PoC2,WorkflowSummary,,,PoC 2成果物を検索対象ナレッジとして再利用する流れ,True,False,PoC2|PoC3|Use Case Mapping|Knowledge Assistant|workflow
+Q027,PoC 1とPoC 2はどうつながりますか,Cross PoC Question,PoC3,WorkflowSummary,,,BIMデータ品質評価と業務ユースケース分類の関係,False,False,PoC1|PoC2|workflow|AI readiness|use case mapping
+Q028,PoC 3は何をするPoCですか,PoC3 Overview Question,PoC3,WorkflowSummary,,,PoC 1とPoC 2の成果物を検索し根拠付きで説明する役割,False,False,PoC3|Knowledge Assistant|RAG-style|grounded answer
+Q029,PoC 3は本格RAGですか,PoC3 Limitation Question,PoC3,Limitations,,,本格RAGではなくRAG-style MVPである制約,False,False,RAG-style|limitations|MVP|本格RAGではない
+Q030,PoC 3ではAzure AI SearchやOpenAI APIを使いますか,PoC3 Limitation Question,PoC3,Limitations,,,MVPではクラウドAIやAPIを使わない制約,False,False,Azure AI Search|OpenAI API|MVP|対象外
+Q031,PoC 3の回答には参照元が必要ですか,PoC3 Answer Policy Question,PoC3,AnswerPolicy,,,根拠付き回答とReferenced Sourcesの必要性,False,False,answer policy|Referenced Sources|grounded answer|参照元
+Q032,検索結果が不足している場合はどう回答しますか,PoC3 Answer Policy Question,PoC3,AnswerPolicy,,,根拠不足時に断定しない回答方針,True,True,検索結果不足|根拠不足|answer policy|human review
+Q033,HumanReviewRequired=Falseなら人間確認は不要ですか,PoC3 Human Review Question,PoC3,HumanReviewPolicy,,,Falseの意味とAIが最終判断しない方針,True,False,HumanReviewRequired|False|人間確認|最終判断しない
+Q034,RevitモデルをAIが自動修正する機能はありますか,PoC3 Limitation Question,PoC3,Limitations,,,Revitモデル自動修正はMVP対象外である制約,True,False,Revit|自動修正|limitations|human review
+Q035,GitHub公開時に注意すべき制約は何ですか,PoC3 Limitation Question,PoC3,Limitations,,,実案件データや顧客データを使わない公開方針,False,False,GitHub|公開|顧客データ|実案件データ|limitations|MVP|RAG-style|Human Review|Revit|自動修正|AI|最終判断

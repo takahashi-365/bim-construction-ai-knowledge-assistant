@@ -1,0 +1,5491 @@
+{
+  "index_version": "v001",
+  "index_type": "simple_keyword_index",
+  "description": "Local MVP keyword index for PoC 3. This is not an embedding index or vector database.",
+  "document_count": 38,
+  "token_count": 565,
+  "documents": [
+    {
+      "document_id": "P1-RULE-D001",
+      "source_poc": "PoC1",
+      "source_type": "RuleMaster",
+      "title": "Door Name Missing Rule",
+      "rule_id": "D-001",
+      "use_case_id": "",
+      "category": "Door",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "door",
+        "ドア",
+        "扉",
+        "name",
+        "名称",
+        "missing",
+        "未入力",
+        "D-001",
+        "quality",
+        "品質",
+        "AI readiness",
+        "human review"
+      ],
+      "tokens": [
+        "door",
+        "name",
+        "missing",
+        "rule",
+        "title",
+        "category",
+        "ruleid",
+        "001",
+        "issue",
+        "doorカテゴリのname項目が未入力または不明確な状態を検出する品質チェック",
+        "check",
+        "logic",
+        "nameが空欄または欠損しているdoor要素を検出する",
+        "fix",
+        "guide",
+        "bim担当者がrevitモデルまたは集計表を確認し",
+        "プロジェクトの命名ルールに沿ってdoor",
+        "nameを設定する",
+        "ai",
+        "readiness",
+        "impact",
+        "nameが不足していると",
+        "context生成や検索対象ナレッジ化の際に対象要素を識別しにくくなる",
+        "poc1",
+        "rulemaster",
+        "ドア",
+        "扉",
+        "名称",
+        "未入力",
+        "quality",
+        "品質",
+        "human",
+        "review",
+        "high",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "door name missing rule title: door name missing rule category: door ruleid: d-001 issue: doorカテゴリのname項目が未入力または不明確な状態を検出する品質チェック。 check logic: nameが空欄または欠損しているdoor要素を検出する。 fix guide: bim担当者がrevitモデルまたは集計表を確認し、プロジェクトの命名ルールに沿ってdoor nameを設定する。 ai readiness impact: door nameが不足していると、ai context生成や検索対象ナレッジ化の際に対象要素を識別しにくくなる。 poc1 rulemaster door ドア 扉 name 名称 missing 未入力 d-001 quality 品質 ai readiness human review door d-001 high true false poc1_knowledge_samples.csv doorカテゴリのname項目が未入力または不明確な状態を検出する品質チェック。 nameが空欄または欠損しているdoor要素を検出する。 bim担当者がrevitモデルまたは集計表を確認し、プロジェクトの命名ルールに沿ってdoor nameを設定する。 door nameが不足していると、ai context生成や検索対象ナレッジ化の際に対象要素を識別しにくくなる。"
+    },
+    {
+      "document_id": "P1-RULE-D002",
+      "source_poc": "PoC1",
+      "source_type": "RuleMaster",
+      "title": "Door Level Missing Rule",
+      "rule_id": "D-002",
+      "use_case_id": "",
+      "category": "Door",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "door",
+        "ドア",
+        "level",
+        "階",
+        "階情報",
+        "missing",
+        "未入力",
+        "D-002",
+        "location",
+        "位置情報",
+        "AI context"
+      ],
+      "tokens": [
+        "door",
+        "level",
+        "missing",
+        "rule",
+        "title",
+        "category",
+        "ruleid",
+        "002",
+        "issue",
+        "doorカテゴリのlevel情報が不足している状態を検出する品質チェック",
+        "check",
+        "logic",
+        "levelnameまたはlevel関連項目が空欄のdoor要素を検出する",
+        "fix",
+        "guide",
+        "bim担当者がdoorの配置階または関連levelを確認し",
+        "集計表またはモデル上でlevel情報を補完する",
+        "ai",
+        "readiness",
+        "impact",
+        "level情報が不足していると",
+        "階別集計",
+        "検索フィルタ",
+        "context内の位置情報整理に影響する可能性がある",
+        "poc1",
+        "rulemaster",
+        "ドア",
+        "階",
+        "階情報",
+        "未入力",
+        "location",
+        "位置情報",
+        "context",
+        "medium",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "door level missing rule title: door level missing rule category: door ruleid: d-002 issue: doorカテゴリのlevel情報が不足している状態を検出する品質チェック。 check logic: levelnameまたはlevel関連項目が空欄のdoor要素を検出する。 fix guide: bim担当者がdoorの配置階または関連levelを確認し、集計表またはモデル上でlevel情報を補完する。 ai readiness impact: level情報が不足していると、階別集計、検索フィルタ、ai context内の位置情報整理に影響する可能性がある。 poc1 rulemaster door ドア level 階 階情報 missing 未入力 d-002 location 位置情報 ai context door d-002 medium true false poc1_knowledge_samples.csv doorカテゴリのlevel情報が不足している状態を検出する品質チェック。 levelnameまたはlevel関連項目が空欄のdoor要素を検出する。 bim担当者がdoorの配置階または関連levelを確認し、集計表またはモデル上でlevel情報を補完する。 level情報が不足していると、階別集計、検索フィルタ、ai context内の位置情報整理に影響する可能性がある。"
+    },
+    {
+      "document_id": "P1-RULE-D003",
+      "source_poc": "PoC1",
+      "source_type": "RuleMaster",
+      "title": "Door Room Relation Missing Rule",
+      "rule_id": "D-003",
+      "use_case_id": "",
+      "category": "Door",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": true,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "door",
+        "ドア",
+        "room",
+        "部屋",
+        "RoomName",
+        "RoomNumber",
+        "D-003",
+        "relation",
+        "関連",
+        "AI context",
+        "deep dive"
+      ],
+      "tokens": [
+        "door",
+        "room",
+        "relation",
+        "missing",
+        "rule",
+        "title",
+        "category",
+        "ruleid",
+        "003",
+        "issue",
+        "doorとroomの関連情報が不足している状態を検出する品質チェック",
+        "check",
+        "logic",
+        "roomnameまたはroomnumberが取得できないdoor要素を検出する",
+        "fix",
+        "guide",
+        "bim担当者がdoorの設置位置",
+        "from",
+        "to",
+        "部屋情報を確認し",
+        "必要に応じてroom設定やdoor配置を見直す",
+        "ai",
+        "readiness",
+        "impact",
+        "room関連情報が不足していると",
+        "部屋別の検索",
+        "維持管理情報",
+        "aiによる文脈説明の精度に影響する可能性がある",
+        "poc1",
+        "rulemaster",
+        "ドア",
+        "部屋",
+        "roomname",
+        "roomnumber",
+        "関連",
+        "context",
+        "deep",
+        "dive",
+        "high",
+        "true",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "door room relation missing rule title: door room relation missing rule category: door ruleid: d-003 issue: doorとroomの関連情報が不足している状態を検出する品質チェック。 check logic: roomnameまたはroomnumberが取得できないdoor要素を検出する。 fix guide: bim担当者がdoorの設置位置、from room、to room、部屋情報を確認し、必要に応じてroom設定やdoor配置を見直す。 ai readiness impact: room関連情報が不足していると、部屋別の検索、維持管理情報、aiによる文脈説明の精度に影響する可能性がある。 poc1 rulemaster door ドア room 部屋 roomname roomnumber d-003 relation 関連 ai context deep dive door d-003 high true true poc1_knowledge_samples.csv doorとroomの関連情報が不足している状態を検出する品質チェック。 roomnameまたはroomnumberが取得できないdoor要素を検出する。 bim担当者がdoorの設置位置、from room、to room、部屋情報を確認し、必要に応じてroom設定やdoor配置を見直す。 room関連情報が不足していると、部屋別の検索、維持管理情報、aiによる文脈説明の精度に影響する可能性がある。"
+    },
+    {
+      "document_id": "P1-RULE-R101",
+      "source_poc": "PoC1",
+      "source_type": "RuleMaster",
+      "title": "Room Name Missing Rule",
+      "rule_id": "R-101",
+      "use_case_id": "",
+      "category": "Room",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "room",
+        "部屋",
+        "RoomName",
+        "室名",
+        "missing",
+        "未入力",
+        "R-101",
+        "space",
+        "空間",
+        "AI readiness"
+      ],
+      "tokens": [
+        "room",
+        "name",
+        "missing",
+        "rule",
+        "title",
+        "category",
+        "ruleid",
+        "101",
+        "issue",
+        "roomカテゴリのroomnameが未入力または不明確な状態を検出する品質チェック",
+        "check",
+        "logic",
+        "roomnameが空欄または欠損しているroomを検出する",
+        "fix",
+        "guide",
+        "bim担当者がroom",
+        "scheduleまたはrevitモデルを確認し",
+        "設計意図や部屋用途に沿ってroomnameを設定する",
+        "ai",
+        "readiness",
+        "impact",
+        "roomnameが不足していると",
+        "aiが部屋用途や空間情報を説明しにくくなり",
+        "rag",
+        "style検索でも対象空間を特定しにくくなる",
+        "poc1",
+        "rulemaster",
+        "部屋",
+        "roomname",
+        "室名",
+        "未入力",
+        "space",
+        "空間",
+        "high",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "room name missing rule title: room name missing rule category: room ruleid: r-101 issue: roomカテゴリのroomnameが未入力または不明確な状態を検出する品質チェック。 check logic: roomnameが空欄または欠損しているroomを検出する。 fix guide: bim担当者がroom scheduleまたはrevitモデルを確認し、設計意図や部屋用途に沿ってroomnameを設定する。 ai readiness impact: roomnameが不足していると、aiが部屋用途や空間情報を説明しにくくなり、rag-style検索でも対象空間を特定しにくくなる。 poc1 rulemaster room 部屋 roomname 室名 missing 未入力 r-101 space 空間 ai readiness room r-101 high true false poc1_knowledge_samples.csv roomカテゴリのroomnameが未入力または不明確な状態を検出する品質チェック。 roomnameが空欄または欠損しているroomを検出する。 bim担当者がroom scheduleまたはrevitモデルを確認し、設計意図や部屋用途に沿ってroomnameを設定する。 roomnameが不足していると、aiが部屋用途や空間情報を説明しにくくなり、rag-style検索でも対象空間を特定しにくくなる。"
+    },
+    {
+      "document_id": "P1-RULE-R102",
+      "source_poc": "PoC1",
+      "source_type": "RuleMaster",
+      "title": "Room Number Missing Rule",
+      "rule_id": "R-102",
+      "use_case_id": "",
+      "category": "Room",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "room",
+        "部屋",
+        "RoomNumber",
+        "室番号",
+        "番号",
+        "missing",
+        "未入力",
+        "R-102",
+        "identifier",
+        "識別"
+      ],
+      "tokens": [
+        "room",
+        "number",
+        "missing",
+        "rule",
+        "title",
+        "category",
+        "ruleid",
+        "102",
+        "issue",
+        "roomカテゴリのroomnumberが未入力または不明確な状態を検出する品質チェック",
+        "check",
+        "logic",
+        "roomnumberが空欄または欠損しているroomを検出する",
+        "fix",
+        "guide",
+        "bim担当者がroom",
+        "schedule",
+        "図面",
+        "プロジェクトルールを確認し",
+        "適切なroomnumberを設定する",
+        "ai",
+        "readiness",
+        "impact",
+        "roomnumberが不足していると",
+        "部屋の一意識別",
+        "図面・集計表との照合",
+        "context生成に影響する可能性がある",
+        "poc1",
+        "rulemaster",
+        "部屋",
+        "roomnumber",
+        "室番号",
+        "番号",
+        "未入力",
+        "identifier",
+        "識別",
+        "high",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "room number missing rule title: room number missing rule category: room ruleid: r-102 issue: roomカテゴリのroomnumberが未入力または不明確な状態を検出する品質チェック。 check logic: roomnumberが空欄または欠損しているroomを検出する。 fix guide: bim担当者がroom schedule、図面、プロジェクトルールを確認し、適切なroomnumberを設定する。 ai readiness impact: roomnumberが不足していると、部屋の一意識別、図面・集計表との照合、ai context生成に影響する可能性がある。 poc1 rulemaster room 部屋 roomnumber 室番号 番号 missing 未入力 r-102 identifier 識別 room r-102 high true false poc1_knowledge_samples.csv roomカテゴリのroomnumberが未入力または不明確な状態を検出する品質チェック。 roomnumberが空欄または欠損しているroomを検出する。 bim担当者がroom schedule、図面、プロジェクトルールを確認し、適切なroomnumberを設定する。 roomnumberが不足していると、部屋の一意識別、図面・集計表との照合、ai context生成に影響する可能性がある。"
+    },
+    {
+      "document_id": "P1-RULE-R103",
+      "source_poc": "PoC1",
+      "source_type": "RuleMaster",
+      "title": "Room Area Missing Rule",
+      "rule_id": "R-103",
+      "use_case_id": "",
+      "category": "Room",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": true,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "room",
+        "部屋",
+        "area",
+        "面積",
+        "missing",
+        "未入力",
+        "R-103",
+        "boundary",
+        "境界",
+        "BI",
+        "AI readiness"
+      ],
+      "tokens": [
+        "room",
+        "area",
+        "missing",
+        "rule",
+        "title",
+        "category",
+        "ruleid",
+        "103",
+        "issue",
+        "roomカテゴリのarea情報が不足または0に近い状態を検出する品質チェック",
+        "check",
+        "logic",
+        "areaが空欄",
+        "または不自然な値のroomを検出する",
+        "fix",
+        "guide",
+        "bim担当者がroom境界",
+        "配置",
+        "面積計算設定を確認し",
+        "必要に応じてroom",
+        "boundaryやroom配置を見直す",
+        "ai",
+        "readiness",
+        "impact",
+        "area情報が不足していると",
+        "面積集計",
+        "bi分析",
+        "aiによる空間評価や説明に影響する可能性がある",
+        "poc1",
+        "rulemaster",
+        "部屋",
+        "面積",
+        "未入力",
+        "boundary",
+        "境界",
+        "bi",
+        "medium",
+        "true",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "room area missing rule title: room area missing rule category: room ruleid: r-103 issue: roomカテゴリのarea情報が不足または0に近い状態を検出する品質チェック。 check logic: areaが空欄、0、または不自然な値のroomを検出する。 fix guide: bim担当者がroom境界、配置、面積計算設定を確認し、必要に応じてroom boundaryやroom配置を見直す。 ai readiness impact: area情報が不足していると、面積集計、bi分析、aiによる空間評価や説明に影響する可能性がある。 poc1 rulemaster room 部屋 area 面積 missing 未入力 r-103 boundary 境界 bi ai readiness room r-103 medium true true poc1_knowledge_samples.csv roomカテゴリのarea情報が不足または0に近い状態を検出する品質チェック。 areaが空欄、0、または不自然な値のroomを検出する。 bim担当者がroom境界、配置、面積計算設定を確認し、必要に応じてroom boundaryやroom配置を見直す。 area情報が不足していると、面積集計、bi分析、aiによる空間評価や説明に影響する可能性がある。"
+    },
+    {
+      "document_id": "P1-RULE-R104",
+      "source_poc": "PoC1",
+      "source_type": "RuleMaster",
+      "title": "Room Level Missing Rule",
+      "rule_id": "R-104",
+      "use_case_id": "",
+      "category": "Room",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "room",
+        "部屋",
+        "level",
+        "階",
+        "階情報",
+        "missing",
+        "未入力",
+        "R-104",
+        "location",
+        "位置情報"
+      ],
+      "tokens": [
+        "room",
+        "level",
+        "missing",
+        "rule",
+        "title",
+        "category",
+        "ruleid",
+        "104",
+        "issue",
+        "roomカテゴリのlevel情報が不足している状態を検出する品質チェック",
+        "check",
+        "logic",
+        "levelnameまたはlevel関連項目が空欄のroomを検出する",
+        "fix",
+        "guide",
+        "bim担当者がroomの配置階",
+        "level設定",
+        "scheduleを確認し",
+        "必要に応じてlevel情報を補完する",
+        "ai",
+        "readiness",
+        "impact",
+        "level情報が不足していると",
+        "階別検索",
+        "階別集計",
+        "context内の位置情報整理に影響する可能性がある",
+        "poc1",
+        "rulemaster",
+        "部屋",
+        "階",
+        "階情報",
+        "未入力",
+        "location",
+        "位置情報",
+        "medium",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "room level missing rule title: room level missing rule category: room ruleid: r-104 issue: roomカテゴリのlevel情報が不足している状態を検出する品質チェック。 check logic: levelnameまたはlevel関連項目が空欄のroomを検出する。 fix guide: bim担当者がroomの配置階、level設定、room scheduleを確認し、必要に応じてlevel情報を補完する。 ai readiness impact: level情報が不足していると、階別検索、階別集計、ai context内の位置情報整理に影響する可能性がある。 poc1 rulemaster room 部屋 level 階 階情報 missing 未入力 r-104 location 位置情報 room r-104 medium true false poc1_knowledge_samples.csv roomカテゴリのlevel情報が不足している状態を検出する品質チェック。 levelnameまたはlevel関連項目が空欄のroomを検出する。 bim担当者がroomの配置階、level設定、room scheduleを確認し、必要に応じてlevel情報を補完する。 level情報が不足していると、階別検索、階別集計、ai context内の位置情報整理に影響する可能性がある。"
+    },
+    {
+      "document_id": "P1-FIX-F001",
+      "source_poc": "PoC1",
+      "source_type": "FixGuide",
+      "title": "Door Name Missing Fix Guide",
+      "rule_id": "D-001",
+      "use_case_id": "",
+      "category": "Door",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "fix guide",
+        "修正方針",
+        "door",
+        "ドア",
+        "name",
+        "名称",
+        "D-001",
+        "ElementId",
+        "UniqueId"
+      ],
+      "tokens": [
+        "door",
+        "name",
+        "missing",
+        "fix",
+        "guide",
+        "title",
+        "category",
+        "ruleid",
+        "001",
+        "issue",
+        "nameが不足している場合の確認・修正方針を示すfix",
+        "check",
+        "logic",
+        "ruleに関連する修正方針を参照する",
+        "対象doorのelementid",
+        "uniqueid",
+        "familyname",
+        "typenameを確認し",
+        "プロジェクトの命名ルールや設計意図に沿ってdoor",
+        "nameを設定する",
+        "ai",
+        "readiness",
+        "impact",
+        "適切なdoor",
+        "nameが設定されることで",
+        "contextやrag",
+        "style",
+        "documentで対象要素を説明しやすくなる",
+        "poc1",
+        "fixguide",
+        "修正方針",
+        "ドア",
+        "名称",
+        "elementid",
+        "high",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "door name missing fix guide title: door name missing fix guide category: door ruleid: d-001 issue: door nameが不足している場合の確認・修正方針を示すfix guide。 check logic: door name missing ruleに関連する修正方針を参照する。 fix guide: 対象doorのelementid、uniqueid、familyname、typenameを確認し、プロジェクトの命名ルールや設計意図に沿ってdoor nameを設定する。 ai readiness impact: 適切なdoor nameが設定されることで、ai contextやrag-style documentで対象要素を説明しやすくなる。 poc1 fixguide fix guide 修正方針 door ドア name 名称 d-001 elementid uniqueid door d-001 high true false poc1_knowledge_samples.csv door nameが不足している場合の確認・修正方針を示すfix guide。 door name missing ruleに関連する修正方針を参照する。 対象doorのelementid、uniqueid、familyname、typenameを確認し、プロジェクトの命名ルールや設計意図に沿ってdoor nameを設定する。 適切なdoor nameが設定されることで、ai contextやrag-style documentで対象要素を説明しやすくなる。"
+    },
+    {
+      "document_id": "P1-FIX-F002",
+      "source_poc": "PoC1",
+      "source_type": "FixGuide",
+      "title": "Room Information Fix Guide",
+      "rule_id": "R-101",
+      "use_case_id": "",
+      "category": "Room",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "fix guide",
+        "修正方針",
+        "room",
+        "部屋",
+        "RoomName",
+        "RoomNumber",
+        "R-101",
+        "R-102",
+        "space"
+      ],
+      "tokens": [
+        "room",
+        "information",
+        "fix",
+        "guide",
+        "title",
+        "category",
+        "ruleid",
+        "101",
+        "issue",
+        "roomnameやroomnumberが不足している場合の確認・修正方針を示すfix",
+        "check",
+        "logic",
+        "roomnameまたはroomnumberの不足を確認する",
+        "schedule",
+        "平面図",
+        "設計意図",
+        "部屋用途を確認し",
+        "roomnameとroomnumberを適切に設定する",
+        "ai",
+        "readiness",
+        "impact",
+        "room情報が整うことで",
+        "aiが空間用途や部屋別情報を説明しやすくなり",
+        "検索対象ナレッジとして利用しやすくなる",
+        "poc1",
+        "fixguide",
+        "修正方針",
+        "部屋",
+        "roomname",
+        "roomnumber",
+        "102",
+        "space",
+        "high",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "room information fix guide title: room information fix guide category: room ruleid: r-101 issue: roomnameやroomnumberが不足している場合の確認・修正方針を示すfix guide。 check logic: roomnameまたはroomnumberの不足を確認する。 fix guide: room schedule、平面図、設計意図、部屋用途を確認し、roomnameとroomnumberを適切に設定する。 ai readiness impact: room情報が整うことで、aiが空間用途や部屋別情報を説明しやすくなり、検索対象ナレッジとして利用しやすくなる。 poc1 fixguide fix guide 修正方針 room 部屋 roomname roomnumber r-101 r-102 space room r-101 high true false poc1_knowledge_samples.csv roomnameやroomnumberが不足している場合の確認・修正方針を示すfix guide。 roomnameまたはroomnumberの不足を確認する。 room schedule、平面図、設計意図、部屋用途を確認し、roomnameとroomnumberを適切に設定する。 room情報が整うことで、aiが空間用途や部屋別情報を説明しやすくなり、検索対象ナレッジとして利用しやすくなる。"
+    },
+    {
+      "document_id": "P1-AIR-A001",
+      "source_poc": "PoC1",
+      "source_type": "AIReadiness",
+      "title": "AI Readiness Impact of Missing Identifiers",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "General",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "AI readiness",
+        "AI活用準備度",
+        "identifier",
+        "識別子",
+        "ElementId",
+        "UniqueId",
+        "Name",
+        "RoomNumber"
+      ],
+      "tokens": [
+        "ai",
+        "readiness",
+        "impact",
+        "of",
+        "missing",
+        "identifiers",
+        "title",
+        "category",
+        "general",
+        "issue",
+        "elementid",
+        "uniqueid",
+        "name",
+        "roomnumberなどの識別情報が不足すると",
+        "ai活用前のデータ準備に影響する",
+        "check",
+        "logic",
+        "識別子や名称の欠損があるデータを確認対象とする",
+        "fix",
+        "guide",
+        "bim担当者が識別子",
+        "名称",
+        "カテゴリ",
+        "部屋情報を確認し",
+        "contextとして利用できる状態に整える",
+        "識別情報が不足していると",
+        "aiが対象要素や空間を正しく参照しにくくなり",
+        "検索・要約・説明の信頼性が下がる可能性がある",
+        "poc1",
+        "aireadiness",
+        "ai活用準備度",
+        "identifier",
+        "識別子",
+        "roomnumber",
+        "high",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "ai readiness impact of missing identifiers title: ai readiness impact of missing identifiers category: general issue: elementid、uniqueid、name、roomnumberなどの識別情報が不足すると、ai活用前のデータ準備に影響する。 check logic: 識別子や名称の欠損があるデータを確認対象とする。 fix guide: bim担当者が識別子、名称、カテゴリ、部屋情報を確認し、ai contextとして利用できる状態に整える。 ai readiness impact: 識別情報が不足していると、aiが対象要素や空間を正しく参照しにくくなり、検索・要約・説明の信頼性が下がる可能性がある。 poc1 aireadiness ai readiness ai活用準備度 identifier 識別子 elementid uniqueid name roomnumber general high true false poc1_knowledge_samples.csv elementid、uniqueid、name、roomnumberなどの識別情報が不足すると、ai活用前のデータ準備に影響する。 識別子や名称の欠損があるデータを確認対象とする。 bim担当者が識別子、名称、カテゴリ、部屋情報を確認し、ai contextとして利用できる状態に整える。 識別情報が不足していると、aiが対象要素や空間を正しく参照しにくくなり、検索・要約・説明の信頼性が下がる可能性がある。"
+    },
+    {
+      "document_id": "P1-AIC-A001",
+      "source_poc": "PoC1",
+      "source_type": "AIContext",
+      "title": "AI Context for BIM Elements",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "General",
+      "recommended_approach": "",
+      "human_review_required": false,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "AI context",
+        "BIM element",
+        "Category",
+        "ElementId",
+        "UniqueId",
+        "FamilyName",
+        "TypeName",
+        "RoomName",
+        "RoomNumber"
+      ],
+      "tokens": [
+        "ai",
+        "context",
+        "for",
+        "bim",
+        "elements",
+        "title",
+        "category",
+        "general",
+        "issue",
+        "bim要素をaiが扱いやすい文脈情報として整理するためのai",
+        "context方針",
+        "check",
+        "logic",
+        "elementid",
+        "uniqueid",
+        "familyname",
+        "typename",
+        "name",
+        "levelname",
+        "roomname",
+        "roomnumberを確認する",
+        "fix",
+        "guide",
+        "bim要素の属性を整理し",
+        "ruleidやfix",
+        "guideと結びつけて説明できるようにする",
+        "readiness",
+        "impact",
+        "contextが整理されることで",
+        "rag",
+        "style検索や根拠付き回答でbim要素の意味を説明しやすくなる",
+        "poc1",
+        "aicontext",
+        "element",
+        "roomnumber",
+        "info",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "ai context for bim elements title: ai context for bim elements category: general issue: bim要素をaiが扱いやすい文脈情報として整理するためのai context方針。 check logic: category、elementid、uniqueid、familyname、typename、name、levelname、roomname、roomnumberを確認する。 fix guide: bim要素の属性を整理し、ruleidやfix guideと結びつけて説明できるようにする。 ai readiness impact: ai contextが整理されることで、rag-style検索や根拠付き回答でbim要素の意味を説明しやすくなる。 poc1 aicontext ai context bim element category elementid uniqueid familyname typename roomname roomnumber general info false false poc1_knowledge_samples.csv bim要素をaiが扱いやすい文脈情報として整理するためのai context方針。 category、elementid、uniqueid、familyname、typename、name、levelname、roomname、roomnumberを確認する。 bim要素の属性を整理し、ruleidやfix guideと結びつけて説明できるようにする。 ai contextが整理されることで、rag-style検索や根拠付き回答でbim要素の意味を説明しやすくなる。"
+    },
+    {
+      "document_id": "P1-META-M001",
+      "source_poc": "PoC1",
+      "source_type": "pyRevitMetadata",
+      "title": "pyRevit Element Metadata Export",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "Element",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "pyRevit",
+        "metadata",
+        "ElementId",
+        "UniqueId",
+        "Category",
+        "FamilyName",
+        "TypeName",
+        "Revit",
+        "CSV"
+      ],
+      "tokens": [
+        "pyrevit",
+        "element",
+        "metadata",
+        "export",
+        "title",
+        "category",
+        "issue",
+        "pyrevitを用いてrevit要素のelementidやuniqueidなどをcsv出力するmvp方針",
+        "check",
+        "logic",
+        "選択または対象カテゴリのrevit要素から主要metadataを取得する",
+        "fix",
+        "guide",
+        "elementid",
+        "uniqueid",
+        "familyname",
+        "typename",
+        "name",
+        "levelname",
+        "roomname",
+        "roomnumberをcsvとして出力し",
+        "poc",
+        "1やpoc",
+        "3の入力候補にする",
+        "ai",
+        "readiness",
+        "impact",
+        "metadataにより",
+        "bim要素と品質チェック結果",
+        "context",
+        "rag",
+        "style",
+        "documentを接続しやすくなる",
+        "poc1",
+        "pyrevitmetadata",
+        "revit",
+        "csv",
+        "info",
+        "true",
+        "false",
+        "poc1_knowledge_samples"
+      ],
+      "search_text": "pyrevit element metadata export title: pyrevit element metadata export category: element issue: pyrevitを用いてrevit要素のelementidやuniqueidなどをcsv出力するmvp方針。 check logic: 選択または対象カテゴリのrevit要素から主要metadataを取得する。 fix guide: elementid、uniqueid、category、familyname、typename、name、levelname、roomname、roomnumberをcsvとして出力し、poc 1やpoc 3の入力候補にする。 ai readiness impact: pyrevit metadataにより、bim要素と品質チェック結果、ai context、rag-style documentを接続しやすくなる。 poc1 pyrevitmetadata pyrevit metadata elementid uniqueid category familyname typename revit csv element info true false poc1_knowledge_samples.csv pyrevitを用いてrevit要素のelementidやuniqueidなどをcsv出力するmvp方針。 選択または対象カテゴリのrevit要素から主要metadataを取得する。 elementid、uniqueid、category、familyname、typename、name、levelname、roomname、roomnumberをcsvとして出力し、poc 1やpoc 3の入力候補にする。 pyrevit metadataにより、bim要素と品質チェック結果、ai context、rag-style documentを接続しやすくなる。"
+    },
+    {
+      "document_id": "P1-RAG-R001",
+      "source_poc": "PoC1",
+      "source_type": "RAGDesign",
+      "title": "RAG Design Policy for BIM Quality Knowledge",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "General",
+      "recommended_approach": "",
+      "human_review_required": false,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "RAG",
+        "RAG-style",
+        "Rule Master",
+        "Fix Guide",
+        "AI Context",
+        "metadata",
+        "HumanReviewRequired"
+      ],
+      "tokens": [
+        "rag",
+        "design",
+        "policy",
+        "for",
+        "bim",
+        "quality",
+        "knowledge",
+        "title",
+        "category",
+        "general",
+        "issue",
+        "poc",
+        "1で整理したrule",
+        "master",
+        "ai",
+        "context",
+        "fix",
+        "guideをrag",
+        "style検索対象にするための設計方針",
+        "check",
+        "logic",
+        "ruleid",
+        "severity",
+        "fixguide",
+        "humanreviewrequiredを検索対象metadataとして扱う",
+        "guide",
+        "品質チェックルール",
+        "修正方針",
+        "readinessへの影響をdocument化し",
+        "質問に応じて参照できるようにする",
+        "readiness",
+        "impact",
+        "style",
+        "document化により",
+        "bimデータ品質の指摘内容を根拠付きで説明しやすくなる",
+        "poc1",
+        "ragdesign",
+        "rule",
+        "metadata",
+        "humanreviewrequired",
+        "info",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "rag design policy for bim quality knowledge title: rag design policy for bim quality knowledge category: general issue: poc 1で整理したrule master、ai context、fix guideをrag-style検索対象にするための設計方針。 check logic: ruleid、category、severity、fixguide、humanreviewrequiredを検索対象metadataとして扱う。 fix guide: 品質チェックルール、修正方針、ai readinessへの影響をdocument化し、質問に応じて参照できるようにする。 ai readiness impact: rag-style document化により、bimデータ品質の指摘内容を根拠付きで説明しやすくなる。 poc1 ragdesign rag rag-style rule master fix guide ai context metadata humanreviewrequired general info false false poc1_knowledge_samples.csv poc 1で整理したrule master、ai context、fix guideをrag-style検索対象にするための設計方針。 ruleid、category、severity、fixguide、humanreviewrequiredを検索対象metadataとして扱う。 品質チェックルール、修正方針、ai readinessへの影響をdocument化し、質問に応じて参照できるようにする。 rag-style document化により、bimデータ品質の指摘内容を根拠付きで説明しやすくなる。"
+    },
+    {
+      "document_id": "P1-POL-H001",
+      "source_poc": "PoC1",
+      "source_type": "HumanReviewPolicy",
+      "title": "Human Review Required for BIM Quality Decisions",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "General",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "human review",
+        "人間レビュー",
+        "final decision",
+        "最終判断",
+        "BIM quality",
+        "品質判断",
+        "自動修正しない"
+      ],
+      "tokens": [
+        "human",
+        "review",
+        "required",
+        "for",
+        "bim",
+        "quality",
+        "decisions",
+        "title",
+        "category",
+        "general",
+        "issue",
+        "bimデータ品質に関する指摘は",
+        "aiが最終判断するのではなく人間レビューを前提とする",
+        "check",
+        "logic",
+        "設計判断",
+        "施工判断",
+        "法規判断",
+        "安全判断",
+        "契約判断を含む場合はhumanreviewrequired",
+        "trueとする",
+        "fix",
+        "guide",
+        "aiは品質問題の意味や確認ポイントを提示するが",
+        "修正要否や正式判断はbim担当者または関係者が行う",
+        "ai",
+        "readiness",
+        "impact",
+        "review方針を明確にすることで",
+        "aiによる自動修正や自動承認と誤解されることを防ぐ",
+        "poc1",
+        "humanreviewpolicy",
+        "人間レビュー",
+        "final",
+        "decision",
+        "最終判断",
+        "品質判断",
+        "自動修正しない",
+        "high",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "human review required for bim quality decisions title: human review required for bim quality decisions category: general issue: bimデータ品質に関する指摘は、aiが最終判断するのではなく人間レビューを前提とする。 check logic: 設計判断、施工判断、法規判断、安全判断、契約判断を含む場合はhumanreviewrequired=trueとする。 fix guide: aiは品質問題の意味や確認ポイントを提示するが、修正要否や正式判断はbim担当者または関係者が行う。 ai readiness impact: human review方針を明確にすることで、aiによる自動修正や自動承認と誤解されることを防ぐ。 poc1 humanreviewpolicy human review 人間レビュー final decision 最終判断 bim quality 品質判断 自動修正しない general high true false poc1_knowledge_samples.csv bimデータ品質に関する指摘は、aiが最終判断するのではなく人間レビューを前提とする。 設計判断、施工判断、法規判断、安全判断、契約判断を含む場合はhumanreviewrequired=trueとする。 aiは品質問題の意味や確認ポイントを提示するが、修正要否や正式判断はbim担当者または関係者が行う。 human review方針を明確にすることで、aiによる自動修正や自動承認と誤解されることを防ぐ。"
+    },
+    {
+      "document_id": "P1-RES-Q001",
+      "source_poc": "PoC1",
+      "source_type": "QualityCheckResult",
+      "title": "Sample Door Quality Check Result",
+      "rule_id": "D-001",
+      "use_case_id": "",
+      "category": "Door",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "quality check result",
+        "品質チェック結果",
+        "door",
+        "D-001",
+        "Door Name Missing",
+        "ElementId",
+        "Fix Guide"
+      ],
+      "tokens": [
+        "sample",
+        "door",
+        "quality",
+        "check",
+        "result",
+        "title",
+        "category",
+        "ruleid",
+        "001",
+        "issue",
+        "サンプルのdoor品質チェック結果として",
+        "name",
+        "missingが検出された状態を示す",
+        "logic",
+        "missing",
+        "ruleに該当するサンプル結果を扱う",
+        "fix",
+        "guide",
+        "bim担当者が対象doorのelementid",
+        "uniqueid",
+        "familyname",
+        "typenameを確認し",
+        "命名ルールに沿って修正方針を検討する",
+        "ai",
+        "readiness",
+        "impact",
+        "品質チェック結果をai",
+        "contextやfix",
+        "guideと結びつけることで",
+        "根拠付き回答に利用しやすくなる",
+        "poc1",
+        "qualitycheckresult",
+        "品質チェック結果",
+        "elementid",
+        "high",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "sample door quality check result title: sample door quality check result category: door ruleid: d-001 issue: サンプルのdoor品質チェック結果として、door name missingが検出された状態を示す。 check logic: door name missing ruleに該当するサンプル結果を扱う。 fix guide: bim担当者が対象doorのelementid、uniqueid、familyname、typenameを確認し、命名ルールに沿って修正方針を検討する。 ai readiness impact: 品質チェック結果をai contextやfix guideと結びつけることで、根拠付き回答に利用しやすくなる。 poc1 qualitycheckresult quality check result 品質チェック結果 door d-001 door name missing elementid fix guide door d-001 high true false poc1_knowledge_samples.csv サンプルのdoor品質チェック結果として、door name missingが検出された状態を示す。 door name missing ruleに該当するサンプル結果を扱う。 bim担当者が対象doorのelementid、uniqueid、familyname、typenameを確認し、命名ルールに沿って修正方針を検討する。 品質チェック結果をai contextやfix guideと結びつけることで、根拠付き回答に利用しやすくなる。"
+    },
+    {
+      "document_id": "P1-RES-Q002",
+      "source_poc": "PoC1",
+      "source_type": "QualityCheckResult",
+      "title": "Sample Room Quality Check Result",
+      "rule_id": "R-101",
+      "use_case_id": "",
+      "category": "Room",
+      "recommended_approach": "",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc1_knowledge_samples.csv",
+      "keywords": [
+        "quality check result",
+        "品質チェック結果",
+        "room",
+        "R-101",
+        "RoomName Missing",
+        "Room Schedule",
+        "Fix Guide"
+      ],
+      "tokens": [
+        "sample",
+        "room",
+        "quality",
+        "check",
+        "result",
+        "title",
+        "category",
+        "ruleid",
+        "101",
+        "issue",
+        "サンプルのroom品質チェック結果として",
+        "roomname",
+        "missingが検出された状態を示す",
+        "logic",
+        "name",
+        "missing",
+        "ruleに該当するサンプル結果を扱う",
+        "fix",
+        "guide",
+        "bim担当者がroom",
+        "schedule",
+        "部屋用途",
+        "図面情報を確認し",
+        "roomnameの設定方針を検討する",
+        "ai",
+        "readiness",
+        "impact",
+        "room品質チェック結果をai",
+        "contextやrag",
+        "style",
+        "documentに接続することで",
+        "部屋情報の不足がai活用に与える影響を説明しやすくなる",
+        "poc1",
+        "qualitycheckresult",
+        "品質チェック結果",
+        "high",
+        "true",
+        "false",
+        "poc1_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "sample room quality check result title: sample room quality check result category: room ruleid: r-101 issue: サンプルのroom品質チェック結果として、roomname missingが検出された状態を示す。 check logic: room name missing ruleに該当するサンプル結果を扱う。 fix guide: bim担当者がroom schedule、部屋用途、図面情報を確認し、roomnameの設定方針を検討する。 ai readiness impact: room品質チェック結果をai contextやrag-style documentに接続することで、部屋情報の不足がai活用に与える影響を説明しやすくなる。 poc1 qualitycheckresult quality check result 品質チェック結果 room r-101 roomname missing room schedule fix guide room r-101 high true false poc1_knowledge_samples.csv サンプルのroom品質チェック結果として、roomname missingが検出された状態を示す。 room name missing ruleに該当するサンプル結果を扱う。 bim担当者がroom schedule、部屋用途、図面情報を確認し、roomnameの設定方針を検討する。 room品質チェック結果をai contextやrag-style documentに接続することで、部屋情報の不足がai活用に与える影響を説明しやすくなる。"
+    },
+    {
+      "document_id": "P2-USECASE-UC001",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "BIM Issue Report Review Use Case",
+      "rule_id": "",
+      "use_case_id": "UC-001",
+      "category": "BIM Review",
+      "recommended_approach": "RAG Support + Human Review",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "BIM",
+        "issue",
+        "指摘",
+        "review",
+        "RAG",
+        "ナレッジ検索",
+        "Fix Guide",
+        "human review",
+        "UC-001"
+      ],
+      "tokens": [
+        "bim",
+        "issue",
+        "report",
+        "review",
+        "use",
+        "case",
+        "title",
+        "business",
+        "area",
+        "usecaseid",
+        "uc",
+        "001",
+        "recommended",
+        "approach",
+        "rag",
+        "support",
+        "human",
+        "description",
+        "bimに関する指摘内容を確認し",
+        "過去のルール",
+        "fix",
+        "guide",
+        "関連資料を参照しながら対応方針を整理する業務",
+        "input",
+        "data",
+        "bim指摘内容",
+        "ruleid",
+        "関連資料",
+        "process",
+        "指摘内容を確認し",
+        "関連するルールや過去ナレッジを検索して対応方針を整理する",
+        "output",
+        "指摘対応方針の参考回答",
+        "確認ポイント",
+        "参照元一覧",
+        "discussion",
+        "point",
+        "style検索との相性は高いが",
+        "設計判断や施工判断を含む場合は人間レビューが必要",
+        "poc2",
+        "usecasemapping",
+        "指摘",
+        "ナレッジ検索",
+        "true",
+        "false",
+        "poc2_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "bim issue report review use case title: bim issue report review use case business area: bim review usecaseid: uc-001 recommended approach: rag support + human review use case description: bimに関する指摘内容を確認し、過去のルール、fix guide、関連資料を参照しながら対応方針を整理する業務。 input data: bim指摘内容|ruleid|fix guide|関連資料 process: 指摘内容を確認し、関連するルールや過去ナレッジを検索して対応方針を整理する。 output: 指摘対応方針の参考回答|確認ポイント|参照元一覧 discussion point: rag-style検索との相性は高いが、設計判断や施工判断を含む場合は人間レビューが必要。 poc2 usecasemapping bim issue 指摘 review rag ナレッジ検索 fix guide human review uc-001 bim review uc-001 rag support + human review true false poc2_knowledge_samples.csv bim review true false false true bimに関する指摘内容を確認し、過去のルール、fix guide、関連資料を参照しながら対応方針を整理する業務。 bim指摘内容|ruleid|fix guide|関連資料 指摘内容を確認し、関連するルールや過去ナレッジを検索して対応方針を整理する。 指摘対応方針の参考回答|確認ポイント|参照元一覧 rag-style検索との相性は高いが、設計判断や施工判断を含む場合は人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC002",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "BIM Data Quality Review Use Case",
+      "rule_id": "",
+      "use_case_id": "UC-002",
+      "category": "BIM Data Quality",
+      "recommended_approach": "Rule-based Check + Human Review",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "BIM data quality",
+        "品質チェック",
+        "RuleId",
+        "QualityScore",
+        "Fix Guide",
+        "AI readiness",
+        "UC-002"
+      ],
+      "tokens": [
+        "bim",
+        "data",
+        "quality",
+        "review",
+        "use",
+        "case",
+        "title",
+        "business",
+        "area",
+        "usecaseid",
+        "uc",
+        "002",
+        "recommended",
+        "approach",
+        "rule",
+        "based",
+        "check",
+        "human",
+        "description",
+        "bimデータの不足",
+        "表記ゆれ",
+        "不整合を確認し",
+        "ai活用前のデータ品質を評価する業務",
+        "input",
+        "revit集計表",
+        "csv",
+        "master",
+        "qualityscore",
+        "process",
+        "ruleidに基づいて品質チェックを行い",
+        "問題箇所と修正候補を整理する",
+        "output",
+        "品質チェック結果",
+        "fix",
+        "guide",
+        "humanreviewrequired",
+        "discussion",
+        "point",
+        "ルールベースチェックやbi集計に向いているが",
+        "修正要否は人間レビューが必要",
+        "poc2",
+        "usecasemapping",
+        "品質チェック",
+        "ruleid",
+        "ai",
+        "readiness",
+        "true",
+        "false",
+        "poc2_knowledge_samples"
+      ],
+      "search_text": "bim data quality review use case title: bim data quality review use case business area: bim data quality usecaseid: uc-002 recommended approach: rule-based check + human review use case description: bimデータの不足、表記ゆれ、不整合を確認し、ai活用前のデータ品質を評価する業務。 input data: revit集計表|csv|rule master|qualityscore process: ruleidに基づいて品質チェックを行い、問題箇所と修正候補を整理する。 output: 品質チェック結果|qualityscore|fix guide|humanreviewrequired discussion point: ルールベースチェックやbi集計に向いているが、修正要否は人間レビューが必要。 poc2 usecasemapping bim data quality 品質チェック ruleid qualityscore fix guide ai readiness uc-002 bim data quality uc-002 rule-based check + human review true false poc2_knowledge_samples.csv bim data quality false true true true bimデータの不足、表記ゆれ、不整合を確認し、ai活用前のデータ品質を評価する業務。 revit集計表|csv|rule master|qualityscore ruleidに基づいて品質チェックを行い、問題箇所と修正候補を整理する。 品質チェック結果|qualityscore|fix guide|humanreviewrequired ルールベースチェックやbi集計に向いているが、修正要否は人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC003",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "AI Readiness Assessment Use Case",
+      "rule_id": "",
+      "use_case_id": "UC-003",
+      "category": "AI Readiness",
+      "recommended_approach": "BI + Human Review",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "AI readiness",
+        "AI活用準備度",
+        "BI",
+        "score",
+        "QualityScore",
+        "human review",
+        "UC-003"
+      ],
+      "tokens": [
+        "ai",
+        "readiness",
+        "assessment",
+        "use",
+        "case",
+        "title",
+        "business",
+        "area",
+        "usecaseid",
+        "uc",
+        "003",
+        "recommended",
+        "approach",
+        "bi",
+        "human",
+        "review",
+        "description",
+        "bimデータがai",
+        "rag",
+        "機械学習などに利用できる状態かを評価する業務",
+        "input",
+        "data",
+        "品質チェック結果",
+        "ruleid",
+        "qualityscore",
+        "humanreviewrequired",
+        "process",
+        "データ品質",
+        "識別子",
+        "カテゴリ",
+        "room情報などを確認し",
+        "ai活用準備度を整理する",
+        "output",
+        "score",
+        "評価レポート",
+        "確認ポイント",
+        "discussion",
+        "point",
+        "スコア化や可視化には向いているが",
+        "最終的な利用可否は人間レビューが必要",
+        "poc2",
+        "usecasemapping",
+        "ai活用準備度",
+        "true",
+        "false",
+        "poc2_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "ai readiness assessment use case title: ai readiness assessment use case business area: ai readiness usecaseid: uc-003 recommended approach: bi + human review use case description: bimデータがai、bi、rag、機械学習などに利用できる状態かを評価する業務。 input data: 品質チェック結果|ruleid|qualityscore|humanreviewrequired process: データ品質、識別子、カテゴリ、room情報などを確認し、ai活用準備度を整理する。 output: ai readiness score|評価レポート|確認ポイント discussion point: スコア化や可視化には向いているが、最終的な利用可否は人間レビューが必要。 poc2 usecasemapping ai readiness ai活用準備度 bi score qualityscore human review uc-003 ai readiness uc-003 bi + human review true false poc2_knowledge_samples.csv ai readiness false true false true bimデータがai、bi、rag、機械学習などに利用できる状態かを評価する業務。 品質チェック結果|ruleid|qualityscore|humanreviewrequired データ品質、識別子、カテゴリ、room情報などを確認し、ai活用準備度を整理する。 ai readiness score|評価レポート|確認ポイント スコア化や可視化には向いているが、最終的な利用可否は人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC004",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "Fix Guide Search Use Case",
+      "rule_id": "",
+      "use_case_id": "UC-004",
+      "category": "BIM Knowledge",
+      "recommended_approach": "RAG Support",
+      "human_review_required": false,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "Fix Guide",
+        "修正方針",
+        "RAG",
+        "RuleId",
+        "Category",
+        "検索",
+        "UC-004"
+      ],
+      "tokens": [
+        "fix",
+        "guide",
+        "search",
+        "use",
+        "case",
+        "title",
+        "business",
+        "area",
+        "bim",
+        "knowledge",
+        "usecaseid",
+        "uc",
+        "004",
+        "recommended",
+        "approach",
+        "rag",
+        "support",
+        "description",
+        "品質チェック結果に対して",
+        "関連するfix",
+        "guideや確認方針を検索する業務",
+        "input",
+        "data",
+        "ruleid",
+        "category",
+        "品質チェック結果",
+        "process",
+        "ruleidやカテゴリをもとに関連するfix",
+        "guideを検索し",
+        "確認ポイントを提示する",
+        "output",
+        "関連fix",
+        "確認ポイント",
+        "参照元",
+        "discussion",
+        "point",
+        "情報検索用途としてrag",
+        "style検索に向いている",
+        "ただし修正判断は別途人間レビューが必要",
+        "poc2",
+        "usecasemapping",
+        "修正方針",
+        "検索",
+        "false",
+        "poc2_knowledge_samples",
+        "csv",
+        "true"
+      ],
+      "search_text": "fix guide search use case title: fix guide search use case business area: bim knowledge usecaseid: uc-004 recommended approach: rag support use case description: 品質チェック結果に対して、関連するfix guideや確認方針を検索する業務。 input data: ruleid|category|fix guide|品質チェック結果 process: ruleidやカテゴリをもとに関連するfix guideを検索し、確認ポイントを提示する。 output: 関連fix guide|確認ポイント|参照元 discussion point: 情報検索用途としてrag-style検索に向いている。ただし修正判断は別途人間レビューが必要。 poc2 usecasemapping fix guide 修正方針 rag ruleid category 検索 uc-004 bim knowledge uc-004 rag support false false poc2_knowledge_samples.csv bim knowledge true false false true 品質チェック結果に対して、関連するfix guideや確認方針を検索する業務。 ruleid|category|fix guide|品質チェック結果 ruleidやカテゴリをもとに関連するfix guideを検索し、確認ポイントを提示する。 関連fix guide|確認ポイント|参照元 情報検索用途としてrag-style検索に向いている。ただし修正判断は別途人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC005",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "Room Information Review Use Case",
+      "rule_id": "",
+      "use_case_id": "UC-005",
+      "category": "BIM Review",
+      "recommended_approach": "RAG Support + Human Review",
+      "human_review_required": true,
+      "deep_dive_required": true,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "room",
+        "部屋",
+        "RoomName",
+        "RoomNumber",
+        "Area",
+        "Level",
+        "RAG",
+        "BI",
+        "deep dive",
+        "UC-005"
+      ],
+      "tokens": [
+        "room",
+        "information",
+        "review",
+        "use",
+        "case",
+        "title",
+        "business",
+        "area",
+        "bim",
+        "usecaseid",
+        "uc",
+        "005",
+        "recommended",
+        "approach",
+        "rag",
+        "support",
+        "human",
+        "description",
+        "roomname",
+        "roomnumber",
+        "levelなどの部屋情報を確認し",
+        "ai活用や集計に使える状態かを整理する業務",
+        "input",
+        "data",
+        "schedule",
+        "level",
+        "process",
+        "部屋情報の不足や不整合を確認し",
+        "必要に応じて関連ruleやfix",
+        "guideを参照する",
+        "output",
+        "room情報確認結果",
+        "不足項目一覧",
+        "修正方針案",
+        "discussion",
+        "point",
+        "room情報は設計意図や用途判断に関係するため",
+        "追加確認と人間レビューが必要になる場合がある",
+        "poc2",
+        "usecasemapping",
+        "部屋",
+        "bi",
+        "deep",
+        "dive",
+        "true",
+        "poc2_knowledge_samples",
+        "csv",
+        "false"
+      ],
+      "search_text": "room information review use case title: room information review use case business area: bim review usecaseid: uc-005 recommended approach: rag support + human review use case description: roomname、roomnumber、area、levelなどの部屋情報を確認し、ai活用や集計に使える状態かを整理する業務。 input data: room schedule|roomname|roomnumber|area|level process: 部屋情報の不足や不整合を確認し、必要に応じて関連ruleやfix guideを参照する。 output: room情報確認結果|不足項目一覧|修正方針案 discussion point: room情報は設計意図や用途判断に関係するため、追加確認と人間レビューが必要になる場合がある。 poc2 usecasemapping room 部屋 roomname roomnumber area level rag bi deep dive uc-005 bim review uc-005 rag support + human review true true poc2_knowledge_samples.csv bim review true true false true roomname、roomnumber、area、levelなどの部屋情報を確認し、ai活用や集計に使える状態かを整理する業務。 room schedule|roomname|roomnumber|area|level 部屋情報の不足や不整合を確認し、必要に応じて関連ruleやfix guideを参照する。 room情報確認結果|不足項目一覧|修正方針案 room情報は設計意図や用途判断に関係するため、追加確認と人間レビューが必要になる場合がある。"
+    },
+    {
+      "document_id": "P2-USECASE-UC006",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "Door Metadata Review Use Case",
+      "rule_id": "",
+      "use_case_id": "UC-006",
+      "category": "BIM Review",
+      "recommended_approach": "Rule-based Check + Human Review",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "door",
+        "ドア",
+        "metadata",
+        "ElementId",
+        "UniqueId",
+        "FamilyName",
+        "TypeName",
+        "RoomName",
+        "UC-006"
+      ],
+      "tokens": [
+        "door",
+        "metadata",
+        "review",
+        "use",
+        "case",
+        "title",
+        "business",
+        "area",
+        "bim",
+        "usecaseid",
+        "uc",
+        "006",
+        "recommended",
+        "approach",
+        "rule",
+        "based",
+        "check",
+        "human",
+        "description",
+        "door要素のelementid",
+        "uniqueid",
+        "familyname",
+        "typename",
+        "name",
+        "levelname",
+        "roomname",
+        "roomnumberを確認する業務",
+        "input",
+        "data",
+        "pyrevit",
+        "csv",
+        "schedule",
+        "elementid",
+        "process",
+        "door要素のmetadataを確認し",
+        "不足やai",
+        "context化に不向きな情報を抽出する",
+        "output",
+        "metadata確認結果",
+        "不足項目一覧",
+        "fix",
+        "guide参照",
+        "discussion",
+        "point",
+        "metadata整理は自動化支援に向くが",
+        "名称や部屋関連情報の妥当性は人間レビューが必要",
+        "poc2",
+        "usecasemapping",
+        "ドア",
+        "true",
+        "false",
+        "poc2_knowledge_samples"
+      ],
+      "search_text": "door metadata review use case title: door metadata review use case business area: bim review usecaseid: uc-006 recommended approach: rule-based check + human review use case description: door要素のelementid、uniqueid、familyname、typename、name、levelname、roomname、roomnumberを確認する業務。 input data: pyrevit metadata csv|door schedule|elementid|uniqueid process: door要素のmetadataを確認し、不足やai context化に不向きな情報を抽出する。 output: door metadata確認結果|不足項目一覧|fix guide参照 discussion point: metadata整理は自動化支援に向くが、名称や部屋関連情報の妥当性は人間レビューが必要。 poc2 usecasemapping door ドア metadata elementid uniqueid familyname typename roomname uc-006 bim review uc-006 rule-based check + human review true false poc2_knowledge_samples.csv bim review false true true true door要素のelementid、uniqueid、familyname、typename、name、levelname、roomname、roomnumberを確認する業務。 pyrevit metadata csv|door schedule|elementid|uniqueid door要素のmetadataを確認し、不足やai context化に不向きな情報を抽出する。 door metadata確認結果|不足項目一覧|fix guide参照 metadata整理は自動化支援に向くが、名称や部屋関連情報の妥当性は人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC007",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "Construction AI Use Case Classification",
+      "rule_id": "",
+      "use_case_id": "UC-007",
+      "category": "AI DX Planning",
+      "recommended_approach": "Classification Rule + Human Review",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "use case mapping",
+        "分類",
+        "RecommendedApproach",
+        "AI DX",
+        "RAG",
+        "BI",
+        "automation",
+        "UC-007"
+      ],
+      "tokens": [
+        "construction",
+        "ai",
+        "use",
+        "case",
+        "classification",
+        "title",
+        "business",
+        "area",
+        "dx",
+        "planning",
+        "usecaseid",
+        "uc",
+        "007",
+        "recommended",
+        "approach",
+        "rule",
+        "human",
+        "review",
+        "description",
+        "建設業務ユースケースをrag",
+        "bi",
+        "自動化",
+        "ルールベースチェック",
+        "人間レビュー",
+        "深掘り対象に分類する業務",
+        "input",
+        "data",
+        "業務ユースケース一覧",
+        "分類ルール",
+        "判断メモ",
+        "process",
+        "入力された業務内容を分類ルールに基づいて整理し",
+        "dx活用パターンを付与する",
+        "output",
+        "recommendedapproach",
+        "分類結果",
+        "協議用メモ",
+        "discussion",
+        "point",
+        "分類は協議材料として有効だが",
+        "最終的な導入判断は人間レビューが必要",
+        "poc2",
+        "usecasemapping",
+        "mapping",
+        "分類",
+        "rag",
+        "automation",
+        "true",
+        "false",
+        "poc2_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "construction ai use case classification title: construction ai use case classification business area: ai dx planning usecaseid: uc-007 recommended approach: classification rule + human review use case description: 建設業務ユースケースをrag、bi、自動化、ルールベースチェック、人間レビュー、深掘り対象に分類する業務。 input data: 業務ユースケース一覧|分類ルール|判断メモ process: 入力された業務内容を分類ルールに基づいて整理し、ai/dx活用パターンを付与する。 output: recommendedapproach|分類結果|協議用メモ discussion point: 分類は協議材料として有効だが、最終的な導入判断は人間レビューが必要。 poc2 usecasemapping use case mapping 分類 recommendedapproach ai dx rag bi automation uc-007 ai dx planning uc-007 classification rule + human review true false poc2_knowledge_samples.csv ai dx planning false true true true 建設業務ユースケースをrag、bi、自動化、ルールベースチェック、人間レビュー、深掘り対象に分類する業務。 業務ユースケース一覧|分類ルール|判断メモ 入力された業務内容を分類ルールに基づいて整理し、ai/dx活用パターンを付与する。 recommendedapproach|分類結果|協議用メモ 分類は協議材料として有効だが、最終的な導入判断は人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC008",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "RAG Suitable Use Case Identification",
+      "rule_id": "",
+      "use_case_id": "UC-008",
+      "category": "AI DX Planning",
+      "recommended_approach": "RAG Support",
+      "human_review_required": false,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "RAG",
+        "ナレッジ検索",
+        "過去資料",
+        "FAQ",
+        "Fix Guide",
+        "use case",
+        "UC-008"
+      ],
+      "tokens": [
+        "rag",
+        "suitable",
+        "use",
+        "case",
+        "identification",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "planning",
+        "usecaseid",
+        "uc",
+        "008",
+        "recommended",
+        "approach",
+        "support",
+        "description",
+        "過去資料",
+        "ルール",
+        "fix",
+        "guide",
+        "faq",
+        "ナレッジ参照が有効な業務をrag候補として抽出する業務",
+        "input",
+        "data",
+        "業務ユースケース",
+        "参照資料",
+        "ナレッジ候補",
+        "process",
+        "業務内容にナレッジ検索や過去事例参照が含まれるかを確認し",
+        "rag適性を整理する",
+        "output",
+        "rag候補一覧",
+        "検索対象候補",
+        "参照元候補",
+        "discussion",
+        "point",
+        "rag候補の抽出は可能だが",
+        "実運用ではナレッジ品質と更新ルールの確認が必要",
+        "poc2",
+        "usecasemapping",
+        "ナレッジ検索",
+        "false",
+        "poc2_knowledge_samples",
+        "csv",
+        "true"
+      ],
+      "search_text": "rag suitable use case identification title: rag suitable use case identification business area: ai dx planning usecaseid: uc-008 recommended approach: rag support use case description: 過去資料、ルール、fix guide、faq、ナレッジ参照が有効な業務をrag候補として抽出する業務。 input data: 業務ユースケース|参照資料|ナレッジ候補 process: 業務内容にナレッジ検索や過去事例参照が含まれるかを確認し、rag適性を整理する。 output: rag候補一覧|検索対象候補|参照元候補 discussion point: rag候補の抽出は可能だが、実運用ではナレッジ品質と更新ルールの確認が必要。 poc2 usecasemapping rag ナレッジ検索 過去資料 faq fix guide use case uc-008 ai dx planning uc-008 rag support false false poc2_knowledge_samples.csv ai dx planning true false false false 過去資料、ルール、fix guide、faq、ナレッジ参照が有効な業務をrag候補として抽出する業務。 業務ユースケース|参照資料|ナレッジ候補 業務内容にナレッジ検索や過去事例参照が含まれるかを確認し、rag適性を整理する。 rag候補一覧|検索対象候補|参照元候補 rag候補の抽出は可能だが、実運用ではナレッジ品質と更新ルールの確認が必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC009",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "BI Dashboard Suitable Use Case Identification",
+      "rule_id": "",
+      "use_case_id": "UC-009",
+      "category": "AI DX Planning",
+      "recommended_approach": "BI / Dashboard",
+      "human_review_required": false,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "BI",
+        "dashboard",
+        "ダッシュボード",
+        "集計",
+        "KPI",
+        "score",
+        "件数",
+        "UC-009"
+      ],
+      "tokens": [
+        "bi",
+        "dashboard",
+        "suitable",
+        "use",
+        "case",
+        "identification",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "planning",
+        "usecaseid",
+        "uc",
+        "009",
+        "recommended",
+        "approach",
+        "description",
+        "件数",
+        "割合",
+        "スコア",
+        "進捗",
+        "分類結果などを可視化するのに向いた業務をbi候補として抽出する業務",
+        "input",
+        "data",
+        "集計データ",
+        "分類結果",
+        "process",
+        "定量化しやすい項目を確認し",
+        "biやダッシュボード化の候補として整理する",
+        "output",
+        "bi候補一覧",
+        "ダッシュボード項目案",
+        "集計指標",
+        "discussion",
+        "point",
+        "bi候補の抽出は可能だが",
+        "正しいkpi設計や運用判断は人間レビューが必要",
+        "poc2",
+        "usecasemapping",
+        "ダッシュボード",
+        "集計",
+        "kpi",
+        "score",
+        "false",
+        "poc2_knowledge_samples",
+        "csv",
+        "true"
+      ],
+      "search_text": "bi dashboard suitable use case identification title: bi dashboard suitable use case identification business area: ai dx planning usecaseid: uc-009 recommended approach: bi / dashboard use case description: 件数、割合、スコア、進捗、分類結果などを可視化するのに向いた業務をbi候補として抽出する業務。 input data: 集計データ|分類結果|スコア|件数 process: 定量化しやすい項目を確認し、biやダッシュボード化の候補として整理する。 output: bi候補一覧|ダッシュボード項目案|集計指標 discussion point: bi候補の抽出は可能だが、正しいkpi設計や運用判断は人間レビューが必要。 poc2 usecasemapping bi dashboard ダッシュボード 集計 kpi score 件数 uc-009 ai dx planning uc-009 bi / dashboard false false poc2_knowledge_samples.csv ai dx planning false true false false 件数、割合、スコア、進捗、分類結果などを可視化するのに向いた業務をbi候補として抽出する業務。 集計データ|分類結果|スコア|件数 定量化しやすい項目を確認し、biやダッシュボード化の候補として整理する。 bi候補一覧|ダッシュボード項目案|集計指標 bi候補の抽出は可能だが、正しいkpi設計や運用判断は人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC010",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "Automation Candidate Use Case Identification",
+      "rule_id": "",
+      "use_case_id": "UC-010",
+      "category": "AI DX Planning",
+      "recommended_approach": "Automation Support + Human Review",
+      "human_review_required": true,
+      "deep_dive_required": true,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "automation",
+        "自動化",
+        "定型作業",
+        "workflow",
+        "human review",
+        "deep dive",
+        "UC-010"
+      ],
+      "tokens": [
+        "automation",
+        "candidate",
+        "use",
+        "case",
+        "identification",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "planning",
+        "usecaseid",
+        "uc",
+        "010",
+        "recommended",
+        "approach",
+        "support",
+        "human",
+        "review",
+        "description",
+        "繰り返し作業や定型処理を自動化支援候補として抽出する業務",
+        "input",
+        "data",
+        "業務手順",
+        "入力データ",
+        "出力データ",
+        "判断条件",
+        "process",
+        "業務が定型化されているか",
+        "入力と出力が明確か",
+        "人間判断が必要かを確認する",
+        "output",
+        "自動化候補一覧",
+        "確認事項",
+        "humanreviewrequired",
+        "discussion",
+        "point",
+        "自動化候補であっても",
+        "設計判断",
+        "施工判断",
+        "法規判断",
+        "安全判断",
+        "契約判断を含む場合は人間レビューが必要",
+        "poc2",
+        "usecasemapping",
+        "自動化",
+        "定型作業",
+        "workflow",
+        "deep",
+        "dive",
+        "true",
+        "poc2_knowledge_samples",
+        "csv",
+        "false"
+      ],
+      "search_text": "automation candidate use case identification title: automation candidate use case identification business area: ai dx planning usecaseid: uc-010 recommended approach: automation support + human review use case description: 繰り返し作業や定型処理を自動化支援候補として抽出する業務。 input data: 業務手順|入力データ|出力データ|判断条件 process: 業務が定型化されているか、入力と出力が明確か、人間判断が必要かを確認する。 output: 自動化候補一覧|確認事項|humanreviewrequired discussion point: 自動化候補であっても、設計判断、施工判断、法規判断、安全判断、契約判断を含む場合は人間レビューが必要。 poc2 usecasemapping automation 自動化 定型作業 workflow human review deep dive uc-010 ai dx planning uc-010 automation support + human review true true poc2_knowledge_samples.csv ai dx planning false false true true 繰り返し作業や定型処理を自動化支援候補として抽出する業務。 業務手順|入力データ|出力データ|判断条件 業務が定型化されているか、入力と出力が明確か、人間判断が必要かを確認する。 自動化候補一覧|確認事項|humanreviewrequired 自動化候補であっても、設計判断、施工判断、法規判断、安全判断、契約判断を含む場合は人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC011",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "Rule-based Check Candidate Use Case Identification",
+      "rule_id": "",
+      "use_case_id": "UC-011",
+      "category": "AI DX Planning",
+      "recommended_approach": "Rule-based Check",
+      "human_review_required": false,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "rule-based check",
+        "ルールベース",
+        "判定条件",
+        "閾値",
+        "品質チェック",
+        "UC-011"
+      ],
+      "tokens": [
+        "rule",
+        "based",
+        "check",
+        "candidate",
+        "use",
+        "case",
+        "identification",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "planning",
+        "usecaseid",
+        "uc",
+        "011",
+        "recommended",
+        "approach",
+        "description",
+        "明確な条件や判定ルールに基づいてチェックできる業務をルールベースチェック候補として抽出する業務",
+        "input",
+        "data",
+        "業務ルール",
+        "判定条件",
+        "入力データ",
+        "process",
+        "条件分岐や閾値で判断できる項目を確認し",
+        "ルール化できるかを整理する",
+        "output",
+        "check候補一覧",
+        "判定条件案",
+        "必要データ",
+        "discussion",
+        "point",
+        "明確なルールがある場合はチェック自動化に向くが",
+        "ルール自体の妥当性は人間確認が必要",
+        "poc2",
+        "usecasemapping",
+        "ルールベース",
+        "閾値",
+        "品質チェック",
+        "false",
+        "poc2_knowledge_samples",
+        "csv",
+        "true"
+      ],
+      "search_text": "rule-based check candidate use case identification title: rule-based check candidate use case identification business area: ai dx planning usecaseid: uc-011 recommended approach: rule-based check use case description: 明確な条件や判定ルールに基づいてチェックできる業務をルールベースチェック候補として抽出する業務。 input data: 業務ルール|判定条件|入力データ process: 条件分岐や閾値で判断できる項目を確認し、ルール化できるかを整理する。 output: rule-based check候補一覧|判定条件案|必要データ discussion point: 明確なルールがある場合はチェック自動化に向くが、ルール自体の妥当性は人間確認が必要。 poc2 usecasemapping rule-based check ルールベース 判定条件 閾値 品質チェック uc-011 ai dx planning uc-011 rule-based check false false poc2_knowledge_samples.csv ai dx planning false true true true 明確な条件や判定ルールに基づいてチェックできる業務をルールベースチェック候補として抽出する業務。 業務ルール|判定条件|入力データ 条件分岐や閾値で判断できる項目を確認し、ルール化できるかを整理する。 rule-based check候補一覧|判定条件案|必要データ 明確なルールがある場合はチェック自動化に向くが、ルール自体の妥当性は人間確認が必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC012",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "Human Review Required Use Case Identification",
+      "rule_id": "",
+      "use_case_id": "UC-012",
+      "category": "AI DX Planning",
+      "recommended_approach": "Human Review",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "human review",
+        "人間レビュー",
+        "設計判断",
+        "施工判断",
+        "法規判断",
+        "安全判断",
+        "契約判断",
+        "UC-012"
+      ],
+      "tokens": [
+        "human",
+        "review",
+        "required",
+        "use",
+        "case",
+        "identification",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "planning",
+        "usecaseid",
+        "uc",
+        "012",
+        "recommended",
+        "approach",
+        "description",
+        "設計判断",
+        "施工判断",
+        "法規判断",
+        "安全判断",
+        "契約判断などを含み",
+        "人間レビューが必須となる業務を抽出する業務",
+        "input",
+        "data",
+        "業務内容",
+        "判断種別",
+        "関係者情報",
+        "process",
+        "業務に専門判断や責任判断が含まれるかを確認し",
+        "humanreviewrequiredを設定する",
+        "output",
+        "humanreviewrequired一覧",
+        "注意事項",
+        "協議ポイント",
+        "discussion",
+        "point",
+        "人間レビューが必要な業務では",
+        "aiは候補提示や整理に限定し",
+        "最終判断は関係者が行う",
+        "poc2",
+        "usecasemapping",
+        "人間レビュー",
+        "契約判断",
+        "true",
+        "false",
+        "poc2_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "human review required use case identification title: human review required use case identification business area: ai dx planning usecaseid: uc-012 recommended approach: human review use case description: 設計判断、施工判断、法規判断、安全判断、契約判断などを含み、人間レビューが必須となる業務を抽出する業務。 input data: 業務内容|判断種別|関係者情報 process: 業務に専門判断や責任判断が含まれるかを確認し、humanreviewrequiredを設定する。 output: humanreviewrequired一覧|注意事項|協議ポイント discussion point: 人間レビューが必要な業務では、aiは候補提示や整理に限定し、最終判断は関係者が行う。 poc2 usecasemapping human review 人間レビュー 設計判断 施工判断 法規判断 安全判断 契約判断 uc-012 ai dx planning uc-012 human review true false poc2_knowledge_samples.csv ai dx planning false false false false 設計判断、施工判断、法規判断、安全判断、契約判断などを含み、人間レビューが必須となる業務を抽出する業務。 業務内容|判断種別|関係者情報 業務に専門判断や責任判断が含まれるかを確認し、humanreviewrequiredを設定する。 humanreviewrequired一覧|注意事項|協議ポイント 人間レビューが必要な業務では、aiは候補提示や整理に限定し、最終判断は関係者が行う。"
+    },
+    {
+      "document_id": "P2-USECASE-UC013",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "Deep Dive Required Use Case Identification",
+      "rule_id": "",
+      "use_case_id": "UC-013",
+      "category": "AI DX Planning",
+      "recommended_approach": "Deep Dive Required",
+      "human_review_required": true,
+      "deep_dive_required": true,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "deep dive",
+        "深掘り",
+        "追加確認",
+        "ヒアリング",
+        "判断条件",
+        "業務範囲",
+        "UC-013"
+      ],
+      "tokens": [
+        "deep",
+        "dive",
+        "required",
+        "use",
+        "case",
+        "identification",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "planning",
+        "usecaseid",
+        "uc",
+        "013",
+        "recommended",
+        "approach",
+        "description",
+        "入力情報",
+        "判断条件",
+        "業務範囲が曖昧で",
+        "dx活用方針を決める前に追加確認が必要な業務を抽出する",
+        "input",
+        "data",
+        "業務内容",
+        "出力情報",
+        "process",
+        "業務範囲や判断条件の曖昧さを確認し",
+        "追加ヒアリングが必要かを整理する",
+        "output",
+        "deepdiverequired一覧",
+        "追加確認事項",
+        "ヒアリング観点",
+        "discussion",
+        "point",
+        "deepdiverequired",
+        "trueの場合は",
+        "すぐにrag",
+        "bi",
+        "自動化へ確定分類せず",
+        "追加確認を優先する",
+        "poc2",
+        "usecasemapping",
+        "深掘り",
+        "追加確認",
+        "ヒアリング",
+        "業務範囲",
+        "true",
+        "poc2_knowledge_samples",
+        "csv",
+        "false"
+      ],
+      "search_text": "deep dive required use case identification title: deep dive required use case identification business area: ai dx planning usecaseid: uc-013 recommended approach: deep dive required use case description: 入力情報、判断条件、業務範囲が曖昧で、ai/dx活用方針を決める前に追加確認が必要な業務を抽出する。 input data: 業務内容|入力情報|出力情報|判断条件 process: 業務範囲や判断条件の曖昧さを確認し、追加ヒアリングが必要かを整理する。 output: deepdiverequired一覧|追加確認事項|ヒアリング観点 discussion point: deepdiverequired=trueの場合は、すぐにrag、bi、自動化へ確定分類せず、追加確認を優先する。 poc2 usecasemapping deep dive 深掘り 追加確認 ヒアリング 判断条件 業務範囲 uc-013 ai dx planning uc-013 deep dive required true true poc2_knowledge_samples.csv ai dx planning false false false false 入力情報、判断条件、業務範囲が曖昧で、ai/dx活用方針を決める前に追加確認が必要な業務を抽出する。 業務内容|入力情報|出力情報|判断条件 業務範囲や判断条件の曖昧さを確認し、追加ヒアリングが必要かを整理する。 deepdiverequired一覧|追加確認事項|ヒアリング観点 deepdiverequired=trueの場合は、すぐにrag、bi、自動化へ確定分類せず、追加確認を優先する。"
+    },
+    {
+      "document_id": "P2-USECASE-UC014",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "DX Service Candidate Discussion Reference",
+      "rule_id": "",
+      "use_case_id": "UC-014",
+      "category": "AI DX Planning",
+      "recommended_approach": "Discussion Reference + Human Review",
+      "human_review_required": true,
+      "deep_dive_required": true,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "DX service",
+        "DXサービス",
+        "discussion",
+        "協議",
+        "候補",
+        "導入判断",
+        "human review",
+        "UC-014"
+      ],
+      "tokens": [
+        "dx",
+        "service",
+        "candidate",
+        "discussion",
+        "reference",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "planning",
+        "usecaseid",
+        "uc",
+        "014",
+        "recommended",
+        "approach",
+        "human",
+        "review",
+        "use",
+        "case",
+        "description",
+        "分類結果をもとに",
+        "dxサービス候補や導入テーマを協議するための参考情報を整理する業務",
+        "input",
+        "data",
+        "usecase分類結果",
+        "recommendedapproach",
+        "優先候補メモ",
+        "process",
+        "分類結果から協議対象を整理し",
+        "関係者が検討しやすい形で候補をまとめる",
+        "output",
+        "協議用レポート",
+        "候補一覧",
+        "確認ポイント",
+        "point",
+        "dxサービス候補は提案材料であり",
+        "導入判断",
+        "費用判断",
+        "契約判断は人間レビューが必要",
+        "poc2",
+        "usecasemapping",
+        "dxサービス",
+        "協議",
+        "候補",
+        "true",
+        "poc2_knowledge_samples",
+        "csv",
+        "false"
+      ],
+      "search_text": "dx service candidate discussion reference title: dx service candidate discussion reference business area: ai dx planning usecaseid: uc-014 recommended approach: discussion reference + human review use case description: 分類結果をもとに、dxサービス候補や導入テーマを協議するための参考情報を整理する業務。 input data: usecase分類結果|recommendedapproach|優先候補メモ process: 分類結果から協議対象を整理し、関係者が検討しやすい形で候補をまとめる。 output: 協議用レポート|候補一覧|確認ポイント discussion point: dxサービス候補は提案材料であり、導入判断、費用判断、契約判断は人間レビューが必要。 poc2 usecasemapping dx service dxサービス discussion 協議 候補 導入判断 human review uc-014 ai dx planning uc-014 discussion reference + human review true true poc2_knowledge_samples.csv ai dx planning false true false false 分類結果をもとに、dxサービス候補や導入テーマを協議するための参考情報を整理する業務。 usecase分類結果|recommendedapproach|優先候補メモ 分類結果から協議対象を整理し、関係者が検討しやすい形で候補をまとめる。 協議用レポート|候補一覧|確認ポイント dxサービス候補は提案材料であり、導入判断、費用判断、契約判断は人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-USECASE-UC015",
+      "source_poc": "PoC2",
+      "source_type": "UseCaseMapping",
+      "title": "Construction AI Discussion Report Generation",
+      "rule_id": "",
+      "use_case_id": "UC-015",
+      "category": "AI DX Planning",
+      "recommended_approach": "Report Generation + Human Review",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "report",
+        "レポート",
+        "summary",
+        "サマリー",
+        "discussion",
+        "RAG",
+        "BI",
+        "automation",
+        "UC-015"
+      ],
+      "tokens": [
+        "construction",
+        "ai",
+        "discussion",
+        "report",
+        "generation",
+        "title",
+        "business",
+        "area",
+        "dx",
+        "planning",
+        "usecaseid",
+        "uc",
+        "015",
+        "recommended",
+        "approach",
+        "human",
+        "review",
+        "use",
+        "case",
+        "description",
+        "bim・建設業務ユースケース分類の結果を",
+        "関係者協議用レポートとして整理する業務",
+        "input",
+        "data",
+        "分類結果csv",
+        "usecase一覧",
+        "recommendedapproach",
+        "humanreviewrequired",
+        "process",
+        "分類結果を集計し",
+        "rag候補",
+        "bi候補",
+        "自動化候補",
+        "深掘り対象を整理する",
+        "output",
+        "協議用レポート",
+        "サマリー",
+        "参照元一覧",
+        "point",
+        "レポート生成は自動化支援できるが",
+        "内容の採用判断や提案判断は人間レビューが必要",
+        "poc2",
+        "usecasemapping",
+        "レポート",
+        "summary",
+        "rag",
+        "bi",
+        "automation",
+        "true",
+        "false",
+        "poc2_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "construction ai discussion report generation title: construction ai discussion report generation business area: ai dx planning usecaseid: uc-015 recommended approach: report generation + human review use case description: bim・建設業務ユースケース分類の結果を、関係者協議用レポートとして整理する業務。 input data: 分類結果csv|usecase一覧|recommendedapproach|humanreviewrequired process: 分類結果を集計し、rag候補、bi候補、自動化候補、深掘り対象を整理する。 output: 協議用レポート|サマリー|参照元一覧 discussion point: レポート生成は自動化支援できるが、内容の採用判断や提案判断は人間レビューが必要。 poc2 usecasemapping report レポート summary サマリー discussion rag bi automation uc-015 ai dx planning uc-015 report generation + human review true false poc2_knowledge_samples.csv ai dx planning true true true true bim・建設業務ユースケース分類の結果を、関係者協議用レポートとして整理する業務。 分類結果csv|usecase一覧|recommendedapproach|humanreviewrequired 分類結果を集計し、rag候補、bi候補、自動化候補、深掘り対象を整理する。 協議用レポート|サマリー|参照元一覧 レポート生成は自動化支援できるが、内容の採用判断や提案判断は人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-RULE-CR001",
+      "source_poc": "PoC2",
+      "source_type": "ClassificationRule",
+      "title": "RAG Support Classification Rule",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "AI DX Classification",
+      "recommended_approach": "RAG Support",
+      "human_review_required": false,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "classification rule",
+        "分類ルール",
+        "RAG Support",
+        "ナレッジ参照",
+        "FAQ",
+        "Fix Guide"
+      ],
+      "tokens": [
+        "rag",
+        "support",
+        "classification",
+        "rule",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "recommended",
+        "approach",
+        "use",
+        "case",
+        "description",
+        "過去資料",
+        "ルール",
+        "fix",
+        "guide",
+        "faq",
+        "ナレッジを参照して回答する業務はrag",
+        "support候補として分類する",
+        "input",
+        "data",
+        "業務説明",
+        "参照資料",
+        "ナレッジ有無",
+        "process",
+        "ナレッジ参照が中心かどうかを確認し",
+        "rag適性を判定する",
+        "output",
+        "support分類",
+        "discussion",
+        "point",
+        "検索対象ナレッジの品質や更新ルールが不明な場合は追加確認が必要になる",
+        "poc2",
+        "classificationrule",
+        "分類ルール",
+        "ナレッジ参照",
+        "false",
+        "poc2_knowledge_samples",
+        "csv",
+        "true"
+      ],
+      "search_text": "rag support classification rule title: rag support classification rule business area: ai dx classification recommended approach: rag support use case description: 過去資料、ルール、fix guide、faq、ナレッジを参照して回答する業務はrag support候補として分類する。 input data: 業務説明|参照資料|ナレッジ有無 process: ナレッジ参照が中心かどうかを確認し、rag適性を判定する。 output: rag support分類 discussion point: 検索対象ナレッジの品質や更新ルールが不明な場合は追加確認が必要になる。 poc2 classificationrule classification rule 分類ルール rag support ナレッジ参照 faq fix guide ai dx classification rag support false false poc2_knowledge_samples.csv ai dx classification true false false false 過去資料、ルール、fix guide、faq、ナレッジを参照して回答する業務はrag support候補として分類する。 業務説明|参照資料|ナレッジ有無 ナレッジ参照が中心かどうかを確認し、rag適性を判定する。 rag support分類 検索対象ナレッジの品質や更新ルールが不明な場合は追加確認が必要になる。"
+    },
+    {
+      "document_id": "P2-RULE-CR002",
+      "source_poc": "PoC2",
+      "source_type": "ClassificationRule",
+      "title": "BI Dashboard Classification Rule",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "AI DX Classification",
+      "recommended_approach": "BI / Dashboard",
+      "human_review_required": false,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "classification rule",
+        "分類ルール",
+        "BI",
+        "Dashboard",
+        "KPI",
+        "集計",
+        "可視化"
+      ],
+      "tokens": [
+        "bi",
+        "dashboard",
+        "classification",
+        "rule",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "recommended",
+        "approach",
+        "use",
+        "case",
+        "description",
+        "件数",
+        "スコア",
+        "割合",
+        "進捗",
+        "分類結果などの定量情報を扱う業務はbiまたはdashboard候補として分類する",
+        "input",
+        "data",
+        "数値データ",
+        "process",
+        "可視化や集計に向くかを確認し",
+        "bi適性を判定する",
+        "output",
+        "dashboard分類",
+        "discussion",
+        "point",
+        "kpi定義や業務上の意味づけは人間レビューが必要",
+        "poc2",
+        "classificationrule",
+        "分類ルール",
+        "kpi",
+        "集計",
+        "可視化",
+        "false",
+        "poc2_knowledge_samples",
+        "csv",
+        "true"
+      ],
+      "search_text": "bi dashboard classification rule title: bi dashboard classification rule business area: ai dx classification recommended approach: bi / dashboard use case description: 件数、スコア、割合、進捗、分類結果などの定量情報を扱う業務はbiまたはdashboard候補として分類する。 input data: 数値データ|件数|割合|スコア|進捗 process: 可視化や集計に向くかを確認し、bi適性を判定する。 output: bi / dashboard分類 discussion point: kpi定義や業務上の意味づけは人間レビューが必要。 poc2 classificationrule classification rule 分類ルール bi dashboard kpi 集計 可視化 ai dx classification bi / dashboard false false poc2_knowledge_samples.csv ai dx classification false true false false 件数、スコア、割合、進捗、分類結果などの定量情報を扱う業務はbiまたはdashboard候補として分類する。 数値データ|件数|割合|スコア|進捗 可視化や集計に向くかを確認し、bi適性を判定する。 bi / dashboard分類 kpi定義や業務上の意味づけは人間レビューが必要。"
+    },
+    {
+      "document_id": "P2-RULE-CR003",
+      "source_poc": "PoC2",
+      "source_type": "ClassificationRule",
+      "title": "Automation Support Classification Rule",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "AI DX Classification",
+      "recommended_approach": "Automation Support + Human Review",
+      "human_review_required": true,
+      "deep_dive_required": true,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "classification rule",
+        "分類ルール",
+        "automation",
+        "自動化",
+        "定型作業",
+        "human review"
+      ],
+      "tokens": [
+        "automation",
+        "support",
+        "classification",
+        "rule",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "recommended",
+        "approach",
+        "human",
+        "review",
+        "use",
+        "case",
+        "description",
+        "入力",
+        "処理",
+        "出力が明確で",
+        "繰り返し発生する業務は自動化支援候補として分類する",
+        "input",
+        "data",
+        "業務手順",
+        "出力",
+        "頻度",
+        "process",
+        "定型化できるか",
+        "人間判断が必要かを確認し",
+        "自動化適性を判定する",
+        "output",
+        "support分類",
+        "discussion",
+        "point",
+        "自動化候補であっても",
+        "重要判断を含む場合はhumanreviewrequired",
+        "trueとする",
+        "poc2",
+        "classificationrule",
+        "分類ルール",
+        "自動化",
+        "定型作業",
+        "true",
+        "poc2_knowledge_samples",
+        "csv",
+        "false"
+      ],
+      "search_text": "automation support classification rule title: automation support classification rule business area: ai dx classification recommended approach: automation support + human review use case description: 入力、処理、出力が明確で、繰り返し発生する業務は自動化支援候補として分類する。 input data: 業務手順|入力|処理|出力|頻度 process: 定型化できるか、人間判断が必要かを確認し、自動化適性を判定する。 output: automation support分類 discussion point: 自動化候補であっても、重要判断を含む場合はhumanreviewrequired=trueとする。 poc2 classificationrule classification rule 分類ルール automation 自動化 定型作業 human review ai dx classification automation support + human review true true poc2_knowledge_samples.csv ai dx classification false false true true 入力、処理、出力が明確で、繰り返し発生する業務は自動化支援候補として分類する。 業務手順|入力|処理|出力|頻度 定型化できるか、人間判断が必要かを確認し、自動化適性を判定する。 automation support分類 自動化候補であっても、重要判断を含む場合はhumanreviewrequired=trueとする。"
+    },
+    {
+      "document_id": "P2-RULE-CR004",
+      "source_poc": "PoC2",
+      "source_type": "ClassificationRule",
+      "title": "Human Review Classification Rule",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "AI DX Classification",
+      "recommended_approach": "Human Review",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "classification rule",
+        "分類ルール",
+        "human review",
+        "設計判断",
+        "施工判断",
+        "法規判断",
+        "安全判断",
+        "契約判断"
+      ],
+      "tokens": [
+        "human",
+        "review",
+        "classification",
+        "rule",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "recommended",
+        "approach",
+        "use",
+        "case",
+        "description",
+        "設計判断",
+        "施工判断",
+        "法規判断",
+        "安全判断",
+        "契約判断を含む業務はhuman",
+        "review必須として分類する",
+        "input",
+        "data",
+        "業務内容",
+        "判断種別",
+        "責任範囲",
+        "process",
+        "専門判断や責任判断が含まれるかを確認する",
+        "output",
+        "review分類",
+        "discussion",
+        "point",
+        "aiは最終判断を行わず",
+        "候補提示や整理に限定する",
+        "poc2",
+        "classificationrule",
+        "分類ルール",
+        "契約判断",
+        "true",
+        "false",
+        "poc2_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "human review classification rule title: human review classification rule business area: ai dx classification recommended approach: human review use case description: 設計判断、施工判断、法規判断、安全判断、契約判断を含む業務はhuman review必須として分類する。 input data: 業務内容|判断種別|責任範囲 process: 専門判断や責任判断が含まれるかを確認する。 output: human review分類 discussion point: aiは最終判断を行わず、候補提示や整理に限定する。 poc2 classificationrule classification rule 分類ルール human review 設計判断 施工判断 法規判断 安全判断 契約判断 ai dx classification human review true false poc2_knowledge_samples.csv ai dx classification false false false false 設計判断、施工判断、法規判断、安全判断、契約判断を含む業務はhuman review必須として分類する。 業務内容|判断種別|責任範囲 専門判断や責任判断が含まれるかを確認する。 human review分類 aiは最終判断を行わず、候補提示や整理に限定する。"
+    },
+    {
+      "document_id": "P2-RULE-CR005",
+      "source_poc": "PoC2",
+      "source_type": "ClassificationRule",
+      "title": "Deep Dive Classification Rule",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "AI DX Classification",
+      "recommended_approach": "Deep Dive Required",
+      "human_review_required": true,
+      "deep_dive_required": true,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "classification rule",
+        "分類ルール",
+        "deep dive",
+        "深掘り",
+        "追加確認",
+        "ヒアリング"
+      ],
+      "tokens": [
+        "deep",
+        "dive",
+        "classification",
+        "rule",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "recommended",
+        "approach",
+        "required",
+        "use",
+        "case",
+        "description",
+        "入力情報",
+        "出力情報",
+        "判断条件",
+        "業務範囲が曖昧な業務はdeep",
+        "requiredとして分類する",
+        "input",
+        "data",
+        "業務内容",
+        "process",
+        "業務分解や追加ヒアリングが必要かを確認する",
+        "output",
+        "required分類",
+        "discussion",
+        "point",
+        "曖昧な業務はすぐにai",
+        "dx方針を確定せず",
+        "追加確認を優先する",
+        "poc2",
+        "classificationrule",
+        "分類ルール",
+        "深掘り",
+        "追加確認",
+        "ヒアリング",
+        "true",
+        "poc2_knowledge_samples",
+        "csv",
+        "false"
+      ],
+      "search_text": "deep dive classification rule title: deep dive classification rule business area: ai dx classification recommended approach: deep dive required use case description: 入力情報、出力情報、判断条件、業務範囲が曖昧な業務はdeep dive requiredとして分類する。 input data: 業務内容|入力情報|出力情報|判断条件 process: 業務分解や追加ヒアリングが必要かを確認する。 output: deep dive required分類 discussion point: 曖昧な業務はすぐにai/dx方針を確定せず、追加確認を優先する。 poc2 classificationrule classification rule 分類ルール deep dive 深掘り 追加確認 ヒアリング ai dx classification deep dive required true true poc2_knowledge_samples.csv ai dx classification false false false false 入力情報、出力情報、判断条件、業務範囲が曖昧な業務はdeep dive requiredとして分類する。 業務内容|入力情報|出力情報|判断条件 業務分解や追加ヒアリングが必要かを確認する。 deep dive required分類 曖昧な業務はすぐにai/dx方針を確定せず、追加確認を優先する。"
+    },
+    {
+      "document_id": "P2-POL-H001",
+      "source_poc": "PoC2",
+      "source_type": "HumanReviewPolicy",
+      "title": "Human Review Policy for Construction AI Use Cases",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "AI DX Policy",
+      "recommended_approach": "Human Review",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "human review policy",
+        "人間レビュー",
+        "AI DX",
+        "最終判断しない",
+        "建設業務"
+      ],
+      "tokens": [
+        "human",
+        "review",
+        "policy",
+        "for",
+        "construction",
+        "ai",
+        "use",
+        "cases",
+        "title",
+        "business",
+        "area",
+        "dx",
+        "recommended",
+        "approach",
+        "case",
+        "description",
+        "bim・建設業務ユースケースにおいて",
+        "aiが最終判断しないためのhuman",
+        "review方針",
+        "input",
+        "data",
+        "recommendedapproach",
+        "humanreviewrequired",
+        "deepdiverequired",
+        "process",
+        "dx分類結果にhuman",
+        "review方針を反映し",
+        "回答や協議資料で注意書きを示す",
+        "output",
+        "注意書き",
+        "判断境界",
+        "discussion",
+        "point",
+        "建設業務では専門判断や責任判断が含まれるため",
+        "aiは判断支援に限定する",
+        "poc2",
+        "humanreviewpolicy",
+        "人間レビュー",
+        "最終判断しない",
+        "建設業務",
+        "true",
+        "false",
+        "poc2_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "human review policy for construction ai use cases title: human review policy for construction ai use cases business area: ai dx policy recommended approach: human review use case description: bim・建設業務ユースケースにおいて、aiが最終判断しないためのhuman review方針。 input data: recommendedapproach|humanreviewrequired|deepdiverequired process: ai/dx分類結果にhuman review方針を反映し、回答や協議資料で注意書きを示す。 output: human review方針|注意書き|判断境界 discussion point: 建設業務では専門判断や責任判断が含まれるため、aiは判断支援に限定する。 poc2 humanreviewpolicy human review policy 人間レビュー ai dx 最終判断しない 建設業務 ai dx policy human review true false poc2_knowledge_samples.csv ai dx policy false false false false bim・建設業務ユースケースにおいて、aiが最終判断しないためのhuman review方針。 recommendedapproach|humanreviewrequired|deepdiverequired ai/dx分類結果にhuman review方針を反映し、回答や協議資料で注意書きを示す。 human review方針|注意書き|判断境界 建設業務では専門判断や責任判断が含まれるため、aiは判断支援に限定する。"
+    },
+    {
+      "document_id": "P2-SUM-W001",
+      "source_poc": "PoC2",
+      "source_type": "WorkflowSummary",
+      "title": "PoC 2 Use Case Mapping Workflow Summary",
+      "rule_id": "",
+      "use_case_id": "",
+      "category": "AI DX Planning",
+      "recommended_approach": "Workflow Summary",
+      "human_review_required": true,
+      "deep_dive_required": false,
+      "source_file": "poc2_knowledge_samples.csv",
+      "keywords": [
+        "PoC2",
+        "Use Case Mapping",
+        "RecommendedApproach",
+        "RAG",
+        "BI",
+        "automation",
+        "Human Review",
+        "Deep Dive"
+      ],
+      "tokens": [
+        "poc",
+        "use",
+        "case",
+        "mapping",
+        "workflow",
+        "summary",
+        "title",
+        "business",
+        "area",
+        "ai",
+        "dx",
+        "planning",
+        "recommended",
+        "approach",
+        "description",
+        "2は",
+        "bim・建設業務ユースケースをai",
+        "dx活用パターンに分類し",
+        "協議用レポートを生成するpocである",
+        "input",
+        "data",
+        "usecase一覧",
+        "分類ルール",
+        "recommendedapproach",
+        "process",
+        "業務ユースケースをrag",
+        "bi",
+        "自動化",
+        "ルールベースチェック",
+        "人間レビュー",
+        "深掘り対象に分類する",
+        "output",
+        "usecase",
+        "mapping結果",
+        "dx候補",
+        "協議用レポート",
+        "discussion",
+        "point",
+        "2の成果物はpoc",
+        "3で検索対象ナレッジとして再利用する",
+        "poc2",
+        "workflowsummary",
+        "rag",
+        "automation",
+        "human",
+        "review",
+        "deep",
+        "dive",
+        "true",
+        "false",
+        "poc2_knowledge_samples",
+        "csv"
+      ],
+      "search_text": "poc 2 use case mapping workflow summary title: poc 2 use case mapping workflow summary business area: ai dx planning recommended approach: workflow summary use case description: poc 2は、bim・建設業務ユースケースをai/dx活用パターンに分類し、協議用レポートを生成するpocである。 input data: usecase一覧|分類ルール|recommendedapproach process: 業務ユースケースをrag、bi、自動化、ルールベースチェック、人間レビュー、深掘り対象に分類する。 output: usecase mapping結果|dx候補|協議用レポート discussion point: poc 2の成果物はpoc 3で検索対象ナレッジとして再利用する。 poc2 workflowsummary poc2 use case mapping recommendedapproach rag bi automation human review deep dive ai dx planning workflow summary true false poc2_knowledge_samples.csv ai dx planning true true true true poc 2は、bim・建設業務ユースケースをai/dx活用パターンに分類し、協議用レポートを生成するpocである。 usecase一覧|分類ルール|recommendedapproach 業務ユースケースをrag、bi、自動化、ルールベースチェック、人間レビュー、深掘り対象に分類する。 usecase mapping結果|dx候補|協議用レポート poc 2の成果物はpoc 3で検索対象ナレッジとして再利用する。"
+    }
+  ],
+  "inverted_index": {
+    "door": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-FIX-F001",
+      "P1-RES-Q001",
+      "P2-USECASE-UC006"
+    ],
+    "name": [
+      "P1-RULE-D001",
+      "P1-RULE-R101",
+      "P1-FIX-F001",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC006"
+    ],
+    "missing": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-AIR-A001",
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "rule": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-RAG-R001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC011",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005"
+    ],
+    "title": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "category": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC004"
+    ],
+    "ruleid": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-RAG-R001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004"
+    ],
+    "001": [
+      "P1-RULE-D001",
+      "P1-FIX-F001",
+      "P1-RES-Q001",
+      "P2-USECASE-UC001"
+    ],
+    "issue": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC001"
+    ],
+    "doorカテゴリのname項目が未入力または不明確な状態を検出する品質チェック": [
+      "P1-RULE-D001"
+    ],
+    "check": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC011"
+    ],
+    "logic": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "nameが空欄または欠損しているdoor要素を検出する": [
+      "P1-RULE-D001"
+    ],
+    "fix": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC008",
+      "P2-RULE-CR001"
+    ],
+    "guide": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC008",
+      "P2-RULE-CR001"
+    ],
+    "bim担当者がrevitモデルまたは集計表を確認し": [
+      "P1-RULE-D001"
+    ],
+    "プロジェクトの命名ルールに沿ってdoor": [
+      "P1-RULE-D001"
+    ],
+    "nameを設定する": [
+      "P1-RULE-D001",
+      "P1-FIX-F001"
+    ],
+    "ai": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "readiness": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003"
+    ],
+    "impact": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "nameが不足していると": [
+      "P1-RULE-D001"
+    ],
+    "context生成や検索対象ナレッジ化の際に対象要素を識別しにくくなる": [
+      "P1-RULE-D001"
+    ],
+    "poc1": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "rulemaster": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104"
+    ],
+    "ドア": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-FIX-F001",
+      "P2-USECASE-UC006"
+    ],
+    "扉": [
+      "P1-RULE-D001"
+    ],
+    "名称": [
+      "P1-RULE-D001",
+      "P1-FIX-F001",
+      "P1-AIR-A001"
+    ],
+    "未入力": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104"
+    ],
+    "quality": [
+      "P1-RULE-D001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC002"
+    ],
+    "品質": [
+      "P1-RULE-D001"
+    ],
+    "human": [
+      "P1-RULE-D001",
+      "P1-POL-H001",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "review": [
+      "P1-RULE-D001",
+      "P1-POL-H001",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "high": [
+      "P1-RULE-D001",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "true": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-META-M001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "false": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "poc1_knowledge_samples": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "csv": [
+      "P1-RULE-D001",
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "level": [
+      "P1-RULE-D002",
+      "P1-RULE-R104",
+      "P2-USECASE-UC005"
+    ],
+    "002": [
+      "P1-RULE-D002",
+      "P2-USECASE-UC002"
+    ],
+    "doorカテゴリのlevel情報が不足している状態を検出する品質チェック": [
+      "P1-RULE-D002"
+    ],
+    "levelnameまたはlevel関連項目が空欄のdoor要素を検出する": [
+      "P1-RULE-D002"
+    ],
+    "bim担当者がdoorの配置階または関連levelを確認し": [
+      "P1-RULE-D002"
+    ],
+    "集計表またはモデル上でlevel情報を補完する": [
+      "P1-RULE-D002"
+    ],
+    "level情報が不足していると": [
+      "P1-RULE-D002",
+      "P1-RULE-R104"
+    ],
+    "階別集計": [
+      "P1-RULE-D002",
+      "P1-RULE-R104"
+    ],
+    "検索フィルタ": [
+      "P1-RULE-D002"
+    ],
+    "context内の位置情報整理に影響する可能性がある": [
+      "P1-RULE-D002",
+      "P1-RULE-R104"
+    ],
+    "階": [
+      "P1-RULE-D002",
+      "P1-RULE-R104"
+    ],
+    "階情報": [
+      "P1-RULE-D002",
+      "P1-RULE-R104"
+    ],
+    "location": [
+      "P1-RULE-D002",
+      "P1-RULE-R104"
+    ],
+    "位置情報": [
+      "P1-RULE-D002",
+      "P1-RULE-R104"
+    ],
+    "context": [
+      "P1-RULE-D002",
+      "P1-RULE-D003",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001"
+    ],
+    "medium": [
+      "P1-RULE-D002",
+      "P1-RULE-R103",
+      "P1-RULE-R104"
+    ],
+    "room": [
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F002",
+      "P1-RES-Q002",
+      "P2-USECASE-UC005"
+    ],
+    "relation": [
+      "P1-RULE-D003"
+    ],
+    "003": [
+      "P1-RULE-D003",
+      "P2-USECASE-UC003"
+    ],
+    "doorとroomの関連情報が不足している状態を検出する品質チェック": [
+      "P1-RULE-D003"
+    ],
+    "roomnameまたはroomnumberが取得できないdoor要素を検出する": [
+      "P1-RULE-D003"
+    ],
+    "bim担当者がdoorの設置位置": [
+      "P1-RULE-D003"
+    ],
+    "from": [
+      "P1-RULE-D003"
+    ],
+    "to": [
+      "P1-RULE-D003"
+    ],
+    "部屋情報を確認し": [
+      "P1-RULE-D003",
+      "P1-AIR-A001"
+    ],
+    "必要に応じてroom設定やdoor配置を見直す": [
+      "P1-RULE-D003"
+    ],
+    "room関連情報が不足していると": [
+      "P1-RULE-D003"
+    ],
+    "部屋別の検索": [
+      "P1-RULE-D003"
+    ],
+    "維持管理情報": [
+      "P1-RULE-D003"
+    ],
+    "aiによる文脈説明の精度に影響する可能性がある": [
+      "P1-RULE-D003"
+    ],
+    "部屋": [
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RULE-R103",
+      "P1-RULE-R104",
+      "P1-FIX-F002",
+      "P2-USECASE-UC005"
+    ],
+    "roomname": [
+      "P1-RULE-D003",
+      "P1-RULE-R101",
+      "P1-FIX-F002",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006"
+    ],
+    "roomnumber": [
+      "P1-RULE-D003",
+      "P1-RULE-R102",
+      "P1-FIX-F002",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P2-USECASE-UC005"
+    ],
+    "関連": [
+      "P1-RULE-D003"
+    ],
+    "deep": [
+      "P1-RULE-D003",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC013",
+      "P2-RULE-CR005",
+      "P2-SUM-W001"
+    ],
+    "dive": [
+      "P1-RULE-D003",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC013",
+      "P2-RULE-CR005",
+      "P2-SUM-W001"
+    ],
+    "101": [
+      "P1-RULE-R101",
+      "P1-FIX-F002",
+      "P1-RES-Q002"
+    ],
+    "roomカテゴリのroomnameが未入力または不明確な状態を検出する品質チェック": [
+      "P1-RULE-R101"
+    ],
+    "roomnameが空欄または欠損しているroomを検出する": [
+      "P1-RULE-R101"
+    ],
+    "bim担当者がroom": [
+      "P1-RULE-R101",
+      "P1-RULE-R102",
+      "P1-RES-Q002"
+    ],
+    "scheduleまたはrevitモデルを確認し": [
+      "P1-RULE-R101"
+    ],
+    "設計意図や部屋用途に沿ってroomnameを設定する": [
+      "P1-RULE-R101"
+    ],
+    "roomnameが不足していると": [
+      "P1-RULE-R101"
+    ],
+    "aiが部屋用途や空間情報を説明しにくくなり": [
+      "P1-RULE-R101"
+    ],
+    "rag": [
+      "P1-RULE-R101",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-SUM-W001"
+    ],
+    "style検索でも対象空間を特定しにくくなる": [
+      "P1-RULE-R101"
+    ],
+    "室名": [
+      "P1-RULE-R101"
+    ],
+    "space": [
+      "P1-RULE-R101",
+      "P1-FIX-F002"
+    ],
+    "空間": [
+      "P1-RULE-R101"
+    ],
+    "number": [
+      "P1-RULE-R102"
+    ],
+    "102": [
+      "P1-RULE-R102",
+      "P1-FIX-F002"
+    ],
+    "roomカテゴリのroomnumberが未入力または不明確な状態を検出する品質チェック": [
+      "P1-RULE-R102"
+    ],
+    "roomnumberが空欄または欠損しているroomを検出する": [
+      "P1-RULE-R102"
+    ],
+    "schedule": [
+      "P1-RULE-R102",
+      "P1-FIX-F002",
+      "P1-RES-Q002",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006"
+    ],
+    "図面": [
+      "P1-RULE-R102"
+    ],
+    "プロジェクトルールを確認し": [
+      "P1-RULE-R102"
+    ],
+    "適切なroomnumberを設定する": [
+      "P1-RULE-R102"
+    ],
+    "roomnumberが不足していると": [
+      "P1-RULE-R102"
+    ],
+    "部屋の一意識別": [
+      "P1-RULE-R102"
+    ],
+    "図面・集計表との照合": [
+      "P1-RULE-R102"
+    ],
+    "context生成に影響する可能性がある": [
+      "P1-RULE-R102"
+    ],
+    "室番号": [
+      "P1-RULE-R102"
+    ],
+    "番号": [
+      "P1-RULE-R102"
+    ],
+    "identifier": [
+      "P1-RULE-R102",
+      "P1-AIR-A001"
+    ],
+    "識別": [
+      "P1-RULE-R102"
+    ],
+    "area": [
+      "P1-RULE-R103",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "103": [
+      "P1-RULE-R103"
+    ],
+    "roomカテゴリのarea情報が不足または0に近い状態を検出する品質チェック": [
+      "P1-RULE-R103"
+    ],
+    "areaが空欄": [
+      "P1-RULE-R103"
+    ],
+    "または不自然な値のroomを検出する": [
+      "P1-RULE-R103"
+    ],
+    "bim担当者がroom境界": [
+      "P1-RULE-R103"
+    ],
+    "配置": [
+      "P1-RULE-R103"
+    ],
+    "面積計算設定を確認し": [
+      "P1-RULE-R103"
+    ],
+    "必要に応じてroom": [
+      "P1-RULE-R103"
+    ],
+    "boundaryやroom配置を見直す": [
+      "P1-RULE-R103"
+    ],
+    "area情報が不足していると": [
+      "P1-RULE-R103"
+    ],
+    "面積集計": [
+      "P1-RULE-R103"
+    ],
+    "bi分析": [
+      "P1-RULE-R103"
+    ],
+    "aiによる空間評価や説明に影響する可能性がある": [
+      "P1-RULE-R103"
+    ],
+    "面積": [
+      "P1-RULE-R103"
+    ],
+    "boundary": [
+      "P1-RULE-R103"
+    ],
+    "境界": [
+      "P1-RULE-R103"
+    ],
+    "bi": [
+      "P1-RULE-R103",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR002",
+      "P2-SUM-W001"
+    ],
+    "104": [
+      "P1-RULE-R104"
+    ],
+    "roomカテゴリのlevel情報が不足している状態を検出する品質チェック": [
+      "P1-RULE-R104"
+    ],
+    "levelnameまたはlevel関連項目が空欄のroomを検出する": [
+      "P1-RULE-R104"
+    ],
+    "bim担当者がroomの配置階": [
+      "P1-RULE-R104"
+    ],
+    "level設定": [
+      "P1-RULE-R104"
+    ],
+    "scheduleを確認し": [
+      "P1-RULE-R104"
+    ],
+    "必要に応じてlevel情報を補完する": [
+      "P1-RULE-R104"
+    ],
+    "階別検索": [
+      "P1-RULE-R104"
+    ],
+    "nameが不足している場合の確認・修正方針を示すfix": [
+      "P1-FIX-F001"
+    ],
+    "ruleに関連する修正方針を参照する": [
+      "P1-FIX-F001"
+    ],
+    "対象doorのelementid": [
+      "P1-FIX-F001"
+    ],
+    "uniqueid": [
+      "P1-FIX-F001",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RES-Q001",
+      "P2-USECASE-UC006"
+    ],
+    "familyname": [
+      "P1-FIX-F001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RES-Q001",
+      "P2-USECASE-UC006"
+    ],
+    "typenameを確認し": [
+      "P1-FIX-F001",
+      "P1-RES-Q001"
+    ],
+    "プロジェクトの命名ルールや設計意図に沿ってdoor": [
+      "P1-FIX-F001"
+    ],
+    "適切なdoor": [
+      "P1-FIX-F001"
+    ],
+    "nameが設定されることで": [
+      "P1-FIX-F001"
+    ],
+    "contextやrag": [
+      "P1-FIX-F001",
+      "P1-RES-Q002"
+    ],
+    "style": [
+      "P1-FIX-F001",
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P1-RES-Q002"
+    ],
+    "documentで対象要素を説明しやすくなる": [
+      "P1-FIX-F001"
+    ],
+    "fixguide": [
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-RAG-R001"
+    ],
+    "修正方針": [
+      "P1-FIX-F001",
+      "P1-FIX-F002",
+      "P1-RAG-R001",
+      "P2-USECASE-UC004"
+    ],
+    "elementid": [
+      "P1-FIX-F001",
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RES-Q001",
+      "P2-USECASE-UC006"
+    ],
+    "information": [
+      "P1-FIX-F002",
+      "P2-USECASE-UC005"
+    ],
+    "roomnameやroomnumberが不足している場合の確認・修正方針を示すfix": [
+      "P1-FIX-F002"
+    ],
+    "roomnameまたはroomnumberの不足を確認する": [
+      "P1-FIX-F002"
+    ],
+    "平面図": [
+      "P1-FIX-F002"
+    ],
+    "設計意図": [
+      "P1-FIX-F002"
+    ],
+    "部屋用途を確認し": [
+      "P1-FIX-F002"
+    ],
+    "roomnameとroomnumberを適切に設定する": [
+      "P1-FIX-F002"
+    ],
+    "room情報が整うことで": [
+      "P1-FIX-F002"
+    ],
+    "aiが空間用途や部屋別情報を説明しやすくなり": [
+      "P1-FIX-F002"
+    ],
+    "検索対象ナレッジとして利用しやすくなる": [
+      "P1-FIX-F002"
+    ],
+    "of": [
+      "P1-AIR-A001"
+    ],
+    "identifiers": [
+      "P1-AIR-A001"
+    ],
+    "general": [
+      "P1-AIR-A001",
+      "P1-AIC-A001",
+      "P1-RAG-R001",
+      "P1-POL-H001"
+    ],
+    "roomnumberなどの識別情報が不足すると": [
+      "P1-AIR-A001"
+    ],
+    "ai活用前のデータ準備に影響する": [
+      "P1-AIR-A001"
+    ],
+    "識別子や名称の欠損があるデータを確認対象とする": [
+      "P1-AIR-A001"
+    ],
+    "bim担当者が識別子": [
+      "P1-AIR-A001"
+    ],
+    "カテゴリ": [
+      "P1-AIR-A001",
+      "P2-USECASE-UC003"
+    ],
+    "contextとして利用できる状態に整える": [
+      "P1-AIR-A001"
+    ],
+    "識別情報が不足していると": [
+      "P1-AIR-A001"
+    ],
+    "aiが対象要素や空間を正しく参照しにくくなり": [
+      "P1-AIR-A001"
+    ],
+    "検索・要約・説明の信頼性が下がる可能性がある": [
+      "P1-AIR-A001"
+    ],
+    "aireadiness": [
+      "P1-AIR-A001"
+    ],
+    "ai活用準備度": [
+      "P1-AIR-A001",
+      "P2-USECASE-UC003"
+    ],
+    "識別子": [
+      "P1-AIR-A001",
+      "P2-USECASE-UC003"
+    ],
+    "for": [
+      "P1-AIC-A001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P2-POL-H001"
+    ],
+    "bim": [
+      "P1-AIC-A001",
+      "P1-RAG-R001",
+      "P1-POL-H001",
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006"
+    ],
+    "elements": [
+      "P1-AIC-A001"
+    ],
+    "bim要素をaiが扱いやすい文脈情報として整理するためのai": [
+      "P1-AIC-A001"
+    ],
+    "context方針": [
+      "P1-AIC-A001"
+    ],
+    "typename": [
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P2-USECASE-UC006"
+    ],
+    "levelname": [
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P2-USECASE-UC006"
+    ],
+    "roomnumberを確認する": [
+      "P1-AIC-A001"
+    ],
+    "bim要素の属性を整理し": [
+      "P1-AIC-A001"
+    ],
+    "ruleidやfix": [
+      "P1-AIC-A001"
+    ],
+    "guideと結びつけて説明できるようにする": [
+      "P1-AIC-A001"
+    ],
+    "contextが整理されることで": [
+      "P1-AIC-A001"
+    ],
+    "style検索や根拠付き回答でbim要素の意味を説明しやすくなる": [
+      "P1-AIC-A001"
+    ],
+    "aicontext": [
+      "P1-AIC-A001"
+    ],
+    "element": [
+      "P1-AIC-A001",
+      "P1-META-M001"
+    ],
+    "info": [
+      "P1-AIC-A001",
+      "P1-META-M001",
+      "P1-RAG-R001"
+    ],
+    "pyrevit": [
+      "P1-META-M001",
+      "P2-USECASE-UC006"
+    ],
+    "metadata": [
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P2-USECASE-UC006"
+    ],
+    "export": [
+      "P1-META-M001"
+    ],
+    "pyrevitを用いてrevit要素のelementidやuniqueidなどをcsv出力するmvp方針": [
+      "P1-META-M001"
+    ],
+    "選択または対象カテゴリのrevit要素から主要metadataを取得する": [
+      "P1-META-M001"
+    ],
+    "roomnumberをcsvとして出力し": [
+      "P1-META-M001"
+    ],
+    "poc": [
+      "P1-META-M001",
+      "P1-RAG-R001",
+      "P2-SUM-W001"
+    ],
+    "1やpoc": [
+      "P1-META-M001"
+    ],
+    "3の入力候補にする": [
+      "P1-META-M001"
+    ],
+    "metadataにより": [
+      "P1-META-M001"
+    ],
+    "bim要素と品質チェック結果": [
+      "P1-META-M001"
+    ],
+    "documentを接続しやすくなる": [
+      "P1-META-M001"
+    ],
+    "pyrevitmetadata": [
+      "P1-META-M001"
+    ],
+    "revit": [
+      "P1-META-M001"
+    ],
+    "design": [
+      "P1-RAG-R001"
+    ],
+    "policy": [
+      "P1-RAG-R001",
+      "P2-POL-H001"
+    ],
+    "knowledge": [
+      "P1-RAG-R001",
+      "P2-USECASE-UC004"
+    ],
+    "1で整理したrule": [
+      "P1-RAG-R001"
+    ],
+    "master": [
+      "P1-RAG-R001",
+      "P2-USECASE-UC002"
+    ],
+    "guideをrag": [
+      "P1-RAG-R001"
+    ],
+    "style検索対象にするための設計方針": [
+      "P1-RAG-R001"
+    ],
+    "severity": [
+      "P1-RAG-R001"
+    ],
+    "humanreviewrequiredを検索対象metadataとして扱う": [
+      "P1-RAG-R001"
+    ],
+    "品質チェックルール": [
+      "P1-RAG-R001"
+    ],
+    "readinessへの影響をdocument化し": [
+      "P1-RAG-R001"
+    ],
+    "質問に応じて参照できるようにする": [
+      "P1-RAG-R001"
+    ],
+    "document化により": [
+      "P1-RAG-R001"
+    ],
+    "bimデータ品質の指摘内容を根拠付きで説明しやすくなる": [
+      "P1-RAG-R001"
+    ],
+    "ragdesign": [
+      "P1-RAG-R001"
+    ],
+    "humanreviewrequired": [
+      "P1-RAG-R001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC015",
+      "P2-POL-H001"
+    ],
+    "required": [
+      "P1-POL-H001",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-RULE-CR005"
+    ],
+    "decisions": [
+      "P1-POL-H001"
+    ],
+    "bimデータ品質に関する指摘は": [
+      "P1-POL-H001"
+    ],
+    "aiが最終判断するのではなく人間レビューを前提とする": [
+      "P1-POL-H001"
+    ],
+    "設計判断": [
+      "P1-POL-H001",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC012",
+      "P2-RULE-CR004"
+    ],
+    "施工判断": [
+      "P1-POL-H001",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC012",
+      "P2-RULE-CR004"
+    ],
+    "法規判断": [
+      "P1-POL-H001",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC012",
+      "P2-RULE-CR004"
+    ],
+    "安全判断": [
+      "P1-POL-H001",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC012",
+      "P2-RULE-CR004"
+    ],
+    "契約判断を含む場合はhumanreviewrequired": [
+      "P1-POL-H001"
+    ],
+    "trueとする": [
+      "P1-POL-H001",
+      "P2-RULE-CR003"
+    ],
+    "aiは品質問題の意味や確認ポイントを提示するが": [
+      "P1-POL-H001"
+    ],
+    "修正要否や正式判断はbim担当者または関係者が行う": [
+      "P1-POL-H001"
+    ],
+    "review方針を明確にすることで": [
+      "P1-POL-H001"
+    ],
+    "aiによる自動修正や自動承認と誤解されることを防ぐ": [
+      "P1-POL-H001"
+    ],
+    "humanreviewpolicy": [
+      "P1-POL-H001",
+      "P2-POL-H001"
+    ],
+    "人間レビュー": [
+      "P1-POL-H001",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC012",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "final": [
+      "P1-POL-H001"
+    ],
+    "decision": [
+      "P1-POL-H001"
+    ],
+    "最終判断": [
+      "P1-POL-H001"
+    ],
+    "品質判断": [
+      "P1-POL-H001"
+    ],
+    "自動修正しない": [
+      "P1-POL-H001"
+    ],
+    "sample": [
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "result": [
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "サンプルのdoor品質チェック結果として": [
+      "P1-RES-Q001"
+    ],
+    "missingが検出された状態を示す": [
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "ruleに該当するサンプル結果を扱う": [
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "bim担当者が対象doorのelementid": [
+      "P1-RES-Q001"
+    ],
+    "命名ルールに沿って修正方針を検討する": [
+      "P1-RES-Q001"
+    ],
+    "品質チェック結果をai": [
+      "P1-RES-Q001"
+    ],
+    "contextやfix": [
+      "P1-RES-Q001"
+    ],
+    "guideと結びつけることで": [
+      "P1-RES-Q001"
+    ],
+    "根拠付き回答に利用しやすくなる": [
+      "P1-RES-Q001"
+    ],
+    "qualitycheckresult": [
+      "P1-RES-Q001",
+      "P1-RES-Q002"
+    ],
+    "品質チェック結果": [
+      "P1-RES-Q001",
+      "P1-RES-Q002",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004"
+    ],
+    "サンプルのroom品質チェック結果として": [
+      "P1-RES-Q002"
+    ],
+    "部屋用途": [
+      "P1-RES-Q002"
+    ],
+    "図面情報を確認し": [
+      "P1-RES-Q002"
+    ],
+    "roomnameの設定方針を検討する": [
+      "P1-RES-Q002"
+    ],
+    "room品質チェック結果をai": [
+      "P1-RES-Q002"
+    ],
+    "documentに接続することで": [
+      "P1-RES-Q002"
+    ],
+    "部屋情報の不足がai活用に与える影響を説明しやすくなる": [
+      "P1-RES-Q002"
+    ],
+    "report": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC015"
+    ],
+    "use": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "case": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "business": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "usecaseid": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015"
+    ],
+    "uc": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015"
+    ],
+    "recommended": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "approach": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "support": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC010",
+      "P2-RULE-CR001",
+      "P2-RULE-CR003"
+    ],
+    "description": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "bimに関する指摘内容を確認し": [
+      "P2-USECASE-UC001"
+    ],
+    "過去のルール": [
+      "P2-USECASE-UC001"
+    ],
+    "関連資料を参照しながら対応方針を整理する業務": [
+      "P2-USECASE-UC001"
+    ],
+    "input": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "data": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "bim指摘内容": [
+      "P2-USECASE-UC001"
+    ],
+    "関連資料": [
+      "P2-USECASE-UC001"
+    ],
+    "process": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "指摘内容を確認し": [
+      "P2-USECASE-UC001"
+    ],
+    "関連するルールや過去ナレッジを検索して対応方針を整理する": [
+      "P2-USECASE-UC001"
+    ],
+    "output": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "指摘対応方針の参考回答": [
+      "P2-USECASE-UC001"
+    ],
+    "確認ポイント": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC014"
+    ],
+    "参照元一覧": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC015"
+    ],
+    "discussion": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "point": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "style検索との相性は高いが": [
+      "P2-USECASE-UC001"
+    ],
+    "設計判断や施工判断を含む場合は人間レビューが必要": [
+      "P2-USECASE-UC001"
+    ],
+    "poc2": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "usecasemapping": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015"
+    ],
+    "指摘": [
+      "P2-USECASE-UC001"
+    ],
+    "ナレッジ検索": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC008"
+    ],
+    "poc2_knowledge_samples": [
+      "P2-USECASE-UC001",
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC004",
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "based": [
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC006",
+      "P2-USECASE-UC011"
+    ],
+    "bimデータの不足": [
+      "P2-USECASE-UC002"
+    ],
+    "表記ゆれ": [
+      "P2-USECASE-UC002"
+    ],
+    "不整合を確認し": [
+      "P2-USECASE-UC002"
+    ],
+    "ai活用前のデータ品質を評価する業務": [
+      "P2-USECASE-UC002"
+    ],
+    "revit集計表": [
+      "P2-USECASE-UC002"
+    ],
+    "qualityscore": [
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC003"
+    ],
+    "ruleidに基づいて品質チェックを行い": [
+      "P2-USECASE-UC002"
+    ],
+    "問題箇所と修正候補を整理する": [
+      "P2-USECASE-UC002"
+    ],
+    "ルールベースチェックやbi集計に向いているが": [
+      "P2-USECASE-UC002"
+    ],
+    "修正要否は人間レビューが必要": [
+      "P2-USECASE-UC002"
+    ],
+    "品質チェック": [
+      "P2-USECASE-UC002",
+      "P2-USECASE-UC011"
+    ],
+    "assessment": [
+      "P2-USECASE-UC003"
+    ],
+    "bimデータがai": [
+      "P2-USECASE-UC003"
+    ],
+    "機械学習などに利用できる状態かを評価する業務": [
+      "P2-USECASE-UC003"
+    ],
+    "データ品質": [
+      "P2-USECASE-UC003"
+    ],
+    "room情報などを確認し": [
+      "P2-USECASE-UC003"
+    ],
+    "ai活用準備度を整理する": [
+      "P2-USECASE-UC003"
+    ],
+    "score": [
+      "P2-USECASE-UC003",
+      "P2-USECASE-UC009"
+    ],
+    "評価レポート": [
+      "P2-USECASE-UC003"
+    ],
+    "スコア化や可視化には向いているが": [
+      "P2-USECASE-UC003"
+    ],
+    "最終的な利用可否は人間レビューが必要": [
+      "P2-USECASE-UC003"
+    ],
+    "search": [
+      "P2-USECASE-UC004"
+    ],
+    "004": [
+      "P2-USECASE-UC004"
+    ],
+    "品質チェック結果に対して": [
+      "P2-USECASE-UC004"
+    ],
+    "関連するfix": [
+      "P2-USECASE-UC004"
+    ],
+    "guideや確認方針を検索する業務": [
+      "P2-USECASE-UC004"
+    ],
+    "ruleidやカテゴリをもとに関連するfix": [
+      "P2-USECASE-UC004"
+    ],
+    "guideを検索し": [
+      "P2-USECASE-UC004"
+    ],
+    "確認ポイントを提示する": [
+      "P2-USECASE-UC004"
+    ],
+    "関連fix": [
+      "P2-USECASE-UC004"
+    ],
+    "参照元": [
+      "P2-USECASE-UC004"
+    ],
+    "情報検索用途としてrag": [
+      "P2-USECASE-UC004"
+    ],
+    "style検索に向いている": [
+      "P2-USECASE-UC004"
+    ],
+    "ただし修正判断は別途人間レビューが必要": [
+      "P2-USECASE-UC004"
+    ],
+    "検索": [
+      "P2-USECASE-UC004"
+    ],
+    "005": [
+      "P2-USECASE-UC005"
+    ],
+    "levelなどの部屋情報を確認し": [
+      "P2-USECASE-UC005"
+    ],
+    "ai活用や集計に使える状態かを整理する業務": [
+      "P2-USECASE-UC005"
+    ],
+    "部屋情報の不足や不整合を確認し": [
+      "P2-USECASE-UC005"
+    ],
+    "必要に応じて関連ruleやfix": [
+      "P2-USECASE-UC005"
+    ],
+    "guideを参照する": [
+      "P2-USECASE-UC005"
+    ],
+    "room情報確認結果": [
+      "P2-USECASE-UC005"
+    ],
+    "不足項目一覧": [
+      "P2-USECASE-UC005",
+      "P2-USECASE-UC006"
+    ],
+    "修正方針案": [
+      "P2-USECASE-UC005"
+    ],
+    "room情報は設計意図や用途判断に関係するため": [
+      "P2-USECASE-UC005"
+    ],
+    "追加確認と人間レビューが必要になる場合がある": [
+      "P2-USECASE-UC005"
+    ],
+    "006": [
+      "P2-USECASE-UC006"
+    ],
+    "door要素のelementid": [
+      "P2-USECASE-UC006"
+    ],
+    "roomnumberを確認する業務": [
+      "P2-USECASE-UC006"
+    ],
+    "door要素のmetadataを確認し": [
+      "P2-USECASE-UC006"
+    ],
+    "不足やai": [
+      "P2-USECASE-UC006"
+    ],
+    "context化に不向きな情報を抽出する": [
+      "P2-USECASE-UC006"
+    ],
+    "metadata確認結果": [
+      "P2-USECASE-UC006"
+    ],
+    "guide参照": [
+      "P2-USECASE-UC006"
+    ],
+    "metadata整理は自動化支援に向くが": [
+      "P2-USECASE-UC006"
+    ],
+    "名称や部屋関連情報の妥当性は人間レビューが必要": [
+      "P2-USECASE-UC006"
+    ],
+    "construction": [
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC015",
+      "P2-POL-H001"
+    ],
+    "classification": [
+      "P2-USECASE-UC007",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005"
+    ],
+    "dx": [
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "planning": [
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-SUM-W001"
+    ],
+    "007": [
+      "P2-USECASE-UC007"
+    ],
+    "建設業務ユースケースをrag": [
+      "P2-USECASE-UC007"
+    ],
+    "自動化": [
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC010",
+      "P2-RULE-CR003",
+      "P2-SUM-W001"
+    ],
+    "ルールベースチェック": [
+      "P2-USECASE-UC007",
+      "P2-SUM-W001"
+    ],
+    "深掘り対象に分類する業務": [
+      "P2-USECASE-UC007"
+    ],
+    "業務ユースケース一覧": [
+      "P2-USECASE-UC007"
+    ],
+    "分類ルール": [
+      "P2-USECASE-UC007",
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005",
+      "P2-SUM-W001"
+    ],
+    "判断メモ": [
+      "P2-USECASE-UC007"
+    ],
+    "入力された業務内容を分類ルールに基づいて整理し": [
+      "P2-USECASE-UC007"
+    ],
+    "dx活用パターンを付与する": [
+      "P2-USECASE-UC007"
+    ],
+    "recommendedapproach": [
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-POL-H001",
+      "P2-SUM-W001"
+    ],
+    "分類結果": [
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC009"
+    ],
+    "協議用メモ": [
+      "P2-USECASE-UC007"
+    ],
+    "分類は協議材料として有効だが": [
+      "P2-USECASE-UC007"
+    ],
+    "最終的な導入判断は人間レビューが必要": [
+      "P2-USECASE-UC007"
+    ],
+    "mapping": [
+      "P2-USECASE-UC007",
+      "P2-SUM-W001"
+    ],
+    "分類": [
+      "P2-USECASE-UC007"
+    ],
+    "automation": [
+      "P2-USECASE-UC007",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC015",
+      "P2-RULE-CR003",
+      "P2-SUM-W001"
+    ],
+    "suitable": [
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009"
+    ],
+    "identification": [
+      "P2-USECASE-UC008",
+      "P2-USECASE-UC009",
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013"
+    ],
+    "008": [
+      "P2-USECASE-UC008"
+    ],
+    "過去資料": [
+      "P2-USECASE-UC008",
+      "P2-RULE-CR001"
+    ],
+    "ルール": [
+      "P2-USECASE-UC008",
+      "P2-RULE-CR001"
+    ],
+    "faq": [
+      "P2-USECASE-UC008",
+      "P2-RULE-CR001"
+    ],
+    "ナレッジ参照が有効な業務をrag候補として抽出する業務": [
+      "P2-USECASE-UC008"
+    ],
+    "業務ユースケース": [
+      "P2-USECASE-UC008"
+    ],
+    "参照資料": [
+      "P2-USECASE-UC008",
+      "P2-RULE-CR001"
+    ],
+    "ナレッジ候補": [
+      "P2-USECASE-UC008"
+    ],
+    "業務内容にナレッジ検索や過去事例参照が含まれるかを確認し": [
+      "P2-USECASE-UC008"
+    ],
+    "rag適性を整理する": [
+      "P2-USECASE-UC008"
+    ],
+    "rag候補一覧": [
+      "P2-USECASE-UC008"
+    ],
+    "検索対象候補": [
+      "P2-USECASE-UC008"
+    ],
+    "参照元候補": [
+      "P2-USECASE-UC008"
+    ],
+    "rag候補の抽出は可能だが": [
+      "P2-USECASE-UC008"
+    ],
+    "実運用ではナレッジ品質と更新ルールの確認が必要": [
+      "P2-USECASE-UC008"
+    ],
+    "dashboard": [
+      "P2-USECASE-UC009",
+      "P2-RULE-CR002"
+    ],
+    "009": [
+      "P2-USECASE-UC009"
+    ],
+    "件数": [
+      "P2-USECASE-UC009",
+      "P2-RULE-CR002"
+    ],
+    "割合": [
+      "P2-USECASE-UC009",
+      "P2-RULE-CR002"
+    ],
+    "スコア": [
+      "P2-USECASE-UC009",
+      "P2-RULE-CR002"
+    ],
+    "進捗": [
+      "P2-USECASE-UC009",
+      "P2-RULE-CR002"
+    ],
+    "分類結果などを可視化するのに向いた業務をbi候補として抽出する業務": [
+      "P2-USECASE-UC009"
+    ],
+    "集計データ": [
+      "P2-USECASE-UC009"
+    ],
+    "定量化しやすい項目を確認し": [
+      "P2-USECASE-UC009"
+    ],
+    "biやダッシュボード化の候補として整理する": [
+      "P2-USECASE-UC009"
+    ],
+    "bi候補一覧": [
+      "P2-USECASE-UC009"
+    ],
+    "ダッシュボード項目案": [
+      "P2-USECASE-UC009"
+    ],
+    "集計指標": [
+      "P2-USECASE-UC009"
+    ],
+    "bi候補の抽出は可能だが": [
+      "P2-USECASE-UC009"
+    ],
+    "正しいkpi設計や運用判断は人間レビューが必要": [
+      "P2-USECASE-UC009"
+    ],
+    "ダッシュボード": [
+      "P2-USECASE-UC009"
+    ],
+    "集計": [
+      "P2-USECASE-UC009",
+      "P2-RULE-CR002"
+    ],
+    "kpi": [
+      "P2-USECASE-UC009",
+      "P2-RULE-CR002"
+    ],
+    "candidate": [
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011",
+      "P2-USECASE-UC014"
+    ],
+    "010": [
+      "P2-USECASE-UC010"
+    ],
+    "繰り返し作業や定型処理を自動化支援候補として抽出する業務": [
+      "P2-USECASE-UC010"
+    ],
+    "業務手順": [
+      "P2-USECASE-UC010",
+      "P2-RULE-CR003"
+    ],
+    "入力データ": [
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC011"
+    ],
+    "出力データ": [
+      "P2-USECASE-UC010"
+    ],
+    "判断条件": [
+      "P2-USECASE-UC010",
+      "P2-USECASE-UC013",
+      "P2-RULE-CR005"
+    ],
+    "業務が定型化されているか": [
+      "P2-USECASE-UC010"
+    ],
+    "入力と出力が明確か": [
+      "P2-USECASE-UC010"
+    ],
+    "人間判断が必要かを確認する": [
+      "P2-USECASE-UC010"
+    ],
+    "自動化候補一覧": [
+      "P2-USECASE-UC010"
+    ],
+    "確認事項": [
+      "P2-USECASE-UC010"
+    ],
+    "自動化候補であっても": [
+      "P2-USECASE-UC010",
+      "P2-RULE-CR003"
+    ],
+    "契約判断を含む場合は人間レビューが必要": [
+      "P2-USECASE-UC010"
+    ],
+    "定型作業": [
+      "P2-USECASE-UC010",
+      "P2-RULE-CR003"
+    ],
+    "workflow": [
+      "P2-USECASE-UC010",
+      "P2-SUM-W001"
+    ],
+    "011": [
+      "P2-USECASE-UC011"
+    ],
+    "明確な条件や判定ルールに基づいてチェックできる業務をルールベースチェック候補として抽出する業務": [
+      "P2-USECASE-UC011"
+    ],
+    "業務ルール": [
+      "P2-USECASE-UC011"
+    ],
+    "判定条件": [
+      "P2-USECASE-UC011"
+    ],
+    "条件分岐や閾値で判断できる項目を確認し": [
+      "P2-USECASE-UC011"
+    ],
+    "ルール化できるかを整理する": [
+      "P2-USECASE-UC011"
+    ],
+    "check候補一覧": [
+      "P2-USECASE-UC011"
+    ],
+    "判定条件案": [
+      "P2-USECASE-UC011"
+    ],
+    "必要データ": [
+      "P2-USECASE-UC011"
+    ],
+    "明確なルールがある場合はチェック自動化に向くが": [
+      "P2-USECASE-UC011"
+    ],
+    "ルール自体の妥当性は人間確認が必要": [
+      "P2-USECASE-UC011"
+    ],
+    "ルールベース": [
+      "P2-USECASE-UC011"
+    ],
+    "閾値": [
+      "P2-USECASE-UC011"
+    ],
+    "012": [
+      "P2-USECASE-UC012"
+    ],
+    "契約判断などを含み": [
+      "P2-USECASE-UC012"
+    ],
+    "人間レビューが必須となる業務を抽出する業務": [
+      "P2-USECASE-UC012"
+    ],
+    "業務内容": [
+      "P2-USECASE-UC012",
+      "P2-USECASE-UC013",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005"
+    ],
+    "判断種別": [
+      "P2-USECASE-UC012",
+      "P2-RULE-CR004"
+    ],
+    "関係者情報": [
+      "P2-USECASE-UC012"
+    ],
+    "業務に専門判断や責任判断が含まれるかを確認し": [
+      "P2-USECASE-UC012"
+    ],
+    "humanreviewrequiredを設定する": [
+      "P2-USECASE-UC012"
+    ],
+    "humanreviewrequired一覧": [
+      "P2-USECASE-UC012"
+    ],
+    "注意事項": [
+      "P2-USECASE-UC012"
+    ],
+    "協議ポイント": [
+      "P2-USECASE-UC012"
+    ],
+    "人間レビューが必要な業務では": [
+      "P2-USECASE-UC012"
+    ],
+    "aiは候補提示や整理に限定し": [
+      "P2-USECASE-UC012"
+    ],
+    "最終判断は関係者が行う": [
+      "P2-USECASE-UC012"
+    ],
+    "契約判断": [
+      "P2-USECASE-UC012",
+      "P2-RULE-CR004"
+    ],
+    "013": [
+      "P2-USECASE-UC013"
+    ],
+    "入力情報": [
+      "P2-USECASE-UC013",
+      "P2-RULE-CR005"
+    ],
+    "業務範囲が曖昧で": [
+      "P2-USECASE-UC013"
+    ],
+    "dx活用方針を決める前に追加確認が必要な業務を抽出する": [
+      "P2-USECASE-UC013"
+    ],
+    "出力情報": [
+      "P2-USECASE-UC013",
+      "P2-RULE-CR005"
+    ],
+    "業務範囲や判断条件の曖昧さを確認し": [
+      "P2-USECASE-UC013"
+    ],
+    "追加ヒアリングが必要かを整理する": [
+      "P2-USECASE-UC013"
+    ],
+    "deepdiverequired一覧": [
+      "P2-USECASE-UC013"
+    ],
+    "追加確認事項": [
+      "P2-USECASE-UC013"
+    ],
+    "ヒアリング観点": [
+      "P2-USECASE-UC013"
+    ],
+    "deepdiverequired": [
+      "P2-USECASE-UC013",
+      "P2-POL-H001"
+    ],
+    "trueの場合は": [
+      "P2-USECASE-UC013"
+    ],
+    "すぐにrag": [
+      "P2-USECASE-UC013"
+    ],
+    "自動化へ確定分類せず": [
+      "P2-USECASE-UC013"
+    ],
+    "追加確認を優先する": [
+      "P2-USECASE-UC013",
+      "P2-RULE-CR005"
+    ],
+    "深掘り": [
+      "P2-USECASE-UC013",
+      "P2-RULE-CR005"
+    ],
+    "追加確認": [
+      "P2-USECASE-UC013",
+      "P2-RULE-CR005"
+    ],
+    "ヒアリング": [
+      "P2-USECASE-UC013",
+      "P2-RULE-CR005"
+    ],
+    "業務範囲": [
+      "P2-USECASE-UC013"
+    ],
+    "service": [
+      "P2-USECASE-UC014"
+    ],
+    "reference": [
+      "P2-USECASE-UC014"
+    ],
+    "014": [
+      "P2-USECASE-UC014"
+    ],
+    "分類結果をもとに": [
+      "P2-USECASE-UC014"
+    ],
+    "dxサービス候補や導入テーマを協議するための参考情報を整理する業務": [
+      "P2-USECASE-UC014"
+    ],
+    "usecase分類結果": [
+      "P2-USECASE-UC014"
+    ],
+    "優先候補メモ": [
+      "P2-USECASE-UC014"
+    ],
+    "分類結果から協議対象を整理し": [
+      "P2-USECASE-UC014"
+    ],
+    "関係者が検討しやすい形で候補をまとめる": [
+      "P2-USECASE-UC014"
+    ],
+    "協議用レポート": [
+      "P2-USECASE-UC014",
+      "P2-USECASE-UC015",
+      "P2-SUM-W001"
+    ],
+    "候補一覧": [
+      "P2-USECASE-UC014"
+    ],
+    "dxサービス候補は提案材料であり": [
+      "P2-USECASE-UC014"
+    ],
+    "導入判断": [
+      "P2-USECASE-UC014"
+    ],
+    "費用判断": [
+      "P2-USECASE-UC014"
+    ],
+    "契約判断は人間レビューが必要": [
+      "P2-USECASE-UC014"
+    ],
+    "dxサービス": [
+      "P2-USECASE-UC014"
+    ],
+    "協議": [
+      "P2-USECASE-UC014"
+    ],
+    "候補": [
+      "P2-USECASE-UC014"
+    ],
+    "generation": [
+      "P2-USECASE-UC015"
+    ],
+    "015": [
+      "P2-USECASE-UC015"
+    ],
+    "bim・建設業務ユースケース分類の結果を": [
+      "P2-USECASE-UC015"
+    ],
+    "関係者協議用レポートとして整理する業務": [
+      "P2-USECASE-UC015"
+    ],
+    "分類結果csv": [
+      "P2-USECASE-UC015"
+    ],
+    "usecase一覧": [
+      "P2-USECASE-UC015",
+      "P2-SUM-W001"
+    ],
+    "分類結果を集計し": [
+      "P2-USECASE-UC015"
+    ],
+    "rag候補": [
+      "P2-USECASE-UC015"
+    ],
+    "bi候補": [
+      "P2-USECASE-UC015"
+    ],
+    "自動化候補": [
+      "P2-USECASE-UC015"
+    ],
+    "深掘り対象を整理する": [
+      "P2-USECASE-UC015"
+    ],
+    "サマリー": [
+      "P2-USECASE-UC015"
+    ],
+    "レポート生成は自動化支援できるが": [
+      "P2-USECASE-UC015"
+    ],
+    "内容の採用判断や提案判断は人間レビューが必要": [
+      "P2-USECASE-UC015"
+    ],
+    "レポート": [
+      "P2-USECASE-UC015"
+    ],
+    "summary": [
+      "P2-USECASE-UC015",
+      "P2-SUM-W001"
+    ],
+    "ナレッジを参照して回答する業務はrag": [
+      "P2-RULE-CR001"
+    ],
+    "support候補として分類する": [
+      "P2-RULE-CR001"
+    ],
+    "業務説明": [
+      "P2-RULE-CR001"
+    ],
+    "ナレッジ有無": [
+      "P2-RULE-CR001"
+    ],
+    "ナレッジ参照が中心かどうかを確認し": [
+      "P2-RULE-CR001"
+    ],
+    "rag適性を判定する": [
+      "P2-RULE-CR001"
+    ],
+    "support分類": [
+      "P2-RULE-CR001",
+      "P2-RULE-CR003"
+    ],
+    "検索対象ナレッジの品質や更新ルールが不明な場合は追加確認が必要になる": [
+      "P2-RULE-CR001"
+    ],
+    "classificationrule": [
+      "P2-RULE-CR001",
+      "P2-RULE-CR002",
+      "P2-RULE-CR003",
+      "P2-RULE-CR004",
+      "P2-RULE-CR005"
+    ],
+    "ナレッジ参照": [
+      "P2-RULE-CR001"
+    ],
+    "分類結果などの定量情報を扱う業務はbiまたはdashboard候補として分類する": [
+      "P2-RULE-CR002"
+    ],
+    "数値データ": [
+      "P2-RULE-CR002"
+    ],
+    "可視化や集計に向くかを確認し": [
+      "P2-RULE-CR002"
+    ],
+    "bi適性を判定する": [
+      "P2-RULE-CR002"
+    ],
+    "dashboard分類": [
+      "P2-RULE-CR002"
+    ],
+    "kpi定義や業務上の意味づけは人間レビューが必要": [
+      "P2-RULE-CR002"
+    ],
+    "可視化": [
+      "P2-RULE-CR002"
+    ],
+    "入力": [
+      "P2-RULE-CR003"
+    ],
+    "処理": [
+      "P2-RULE-CR003"
+    ],
+    "出力が明確で": [
+      "P2-RULE-CR003"
+    ],
+    "繰り返し発生する業務は自動化支援候補として分類する": [
+      "P2-RULE-CR003"
+    ],
+    "出力": [
+      "P2-RULE-CR003"
+    ],
+    "頻度": [
+      "P2-RULE-CR003"
+    ],
+    "定型化できるか": [
+      "P2-RULE-CR003"
+    ],
+    "人間判断が必要かを確認し": [
+      "P2-RULE-CR003"
+    ],
+    "自動化適性を判定する": [
+      "P2-RULE-CR003"
+    ],
+    "重要判断を含む場合はhumanreviewrequired": [
+      "P2-RULE-CR003"
+    ],
+    "契約判断を含む業務はhuman": [
+      "P2-RULE-CR004"
+    ],
+    "review必須として分類する": [
+      "P2-RULE-CR004"
+    ],
+    "責任範囲": [
+      "P2-RULE-CR004"
+    ],
+    "専門判断や責任判断が含まれるかを確認する": [
+      "P2-RULE-CR004"
+    ],
+    "review分類": [
+      "P2-RULE-CR004"
+    ],
+    "aiは最終判断を行わず": [
+      "P2-RULE-CR004"
+    ],
+    "候補提示や整理に限定する": [
+      "P2-RULE-CR004"
+    ],
+    "業務範囲が曖昧な業務はdeep": [
+      "P2-RULE-CR005"
+    ],
+    "requiredとして分類する": [
+      "P2-RULE-CR005"
+    ],
+    "業務分解や追加ヒアリングが必要かを確認する": [
+      "P2-RULE-CR005"
+    ],
+    "required分類": [
+      "P2-RULE-CR005"
+    ],
+    "曖昧な業務はすぐにai": [
+      "P2-RULE-CR005"
+    ],
+    "dx方針を確定せず": [
+      "P2-RULE-CR005"
+    ],
+    "cases": [
+      "P2-POL-H001"
+    ],
+    "bim・建設業務ユースケースにおいて": [
+      "P2-POL-H001"
+    ],
+    "aiが最終判断しないためのhuman": [
+      "P2-POL-H001"
+    ],
+    "review方針": [
+      "P2-POL-H001"
+    ],
+    "dx分類結果にhuman": [
+      "P2-POL-H001"
+    ],
+    "review方針を反映し": [
+      "P2-POL-H001"
+    ],
+    "回答や協議資料で注意書きを示す": [
+      "P2-POL-H001"
+    ],
+    "注意書き": [
+      "P2-POL-H001"
+    ],
+    "判断境界": [
+      "P2-POL-H001"
+    ],
+    "建設業務では専門判断や責任判断が含まれるため": [
+      "P2-POL-H001"
+    ],
+    "aiは判断支援に限定する": [
+      "P2-POL-H001"
+    ],
+    "最終判断しない": [
+      "P2-POL-H001"
+    ],
+    "建設業務": [
+      "P2-POL-H001"
+    ],
+    "2は": [
+      "P2-SUM-W001"
+    ],
+    "bim・建設業務ユースケースをai": [
+      "P2-SUM-W001"
+    ],
+    "dx活用パターンに分類し": [
+      "P2-SUM-W001"
+    ],
+    "協議用レポートを生成するpocである": [
+      "P2-SUM-W001"
+    ],
+    "業務ユースケースをrag": [
+      "P2-SUM-W001"
+    ],
+    "深掘り対象に分類する": [
+      "P2-SUM-W001"
+    ],
+    "usecase": [
+      "P2-SUM-W001"
+    ],
+    "mapping結果": [
+      "P2-SUM-W001"
+    ],
+    "dx候補": [
+      "P2-SUM-W001"
+    ],
+    "2の成果物はpoc": [
+      "P2-SUM-W001"
+    ],
+    "3で検索対象ナレッジとして再利用する": [
+      "P2-SUM-W001"
+    ],
+    "workflowsummary": [
+      "P2-SUM-W001"
+    ]
+  }
+}
